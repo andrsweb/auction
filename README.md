@@ -1,4 +1,4 @@
-# 2022 - GULP FOR HTML + SCSS + JS (ES6+)
+# 2023 July 16 - Auction project 
 
 <br />
 
@@ -8,7 +8,7 @@
 
 ### 1. Download archive or clone these files with:
 ```
-git clone https://github.com/andreistez/gulp-html.git
+git clone https://github.com/andreistez/gulp-html.git](https://github.com/andrsweb/auction.git
 ```
 
 ### 2. Install dependencies:
