@@ -1,0 +1,140 @@
+.hero {
+	padding: 247px 0 120px;
+
+	h1 {
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			text-align: left;
+		}
+	}
+
+	&__wrapper {
+		position: relative;
+
+		img {
+			position: absolute;
+			z-index: -1;
+		}
+
+		.hero__note {
+			width: 244px;
+			right: -14%;
+			top: 45%;
+
+			@media all and (min-width: 600px) {
+				right: 0%;
+				top: 45%;
+			}
+
+			@media all and (min-width: $xxl) {
+				width: 610px;
+				right: -23%;
+				top: 27%;
+			}
+		}
+
+		.hero__phone {
+			width: 190px;
+			top: 40%;
+			right: 65%;
+
+			@media all and (min-width: $xxl) {
+				width: 373px;
+				top: 35%;
+				right: 10%;
+			}
+		}
+
+		.hero__watch {
+			width: 91px;
+			right: -5%;
+			top: -35%;
+
+			@media all and (min-width: 600px) {
+				right: 0%;
+				top: -35%;
+			}
+
+			@media all and (min-width: $xxl) {
+				width: 165px;
+				right: -10%;
+				top: -30%;
+			}
+		}
+
+		.hero__ear {
+			width: 70px;
+			top: -37%;
+			right: 70%;
+
+			@media all and (min-width: $xxl) {
+				width: 172px;
+				top: -18%;
+				right: 11%;
+			}
+		}
+	}
+
+	&__text {
+		color: $white;
+		font-family: $ff;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		margin: 8px 0;
+		max-width: 893px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			font-size: 40px;
+			margin: 20px 0;
+			text-align: left;
+		}
+	}
+
+	&__subtext {
+		color: $white;
+		font-family: $ff;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		max-width: 268px;
+		text-align: center;
+		margin: 0 auto;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+			text-align: left;
+			max-width: 428px;
+			margin: 0;
+		}
+
+		strong {
+			font-weight: $fw-regular;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 25px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			margin-top: 41px;
+		}
+
+		.blue {
+			margin-bottom: 131px;
+
+			@media all and (min-width: $lg) {
+				margin-bottom: 0;
+				margin-right: 40px;
+			}
+		}
+	}
+}

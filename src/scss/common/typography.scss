@@ -10,9 +10,9 @@ h4, .h4 {
 
 h1, .h1 {
 	font-size: 30px;
+	color: $white;
 
 	@media all and (min-width: $lg) {
-		color: $white;
 		font-family: $ff;
 		font-size: 64px;
 		font-style: normal;
