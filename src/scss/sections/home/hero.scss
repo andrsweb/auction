@@ -27,6 +27,10 @@
 				top: 45%;
 			}
 
+			@media all and (min-width: $md) {
+				width: 340px;
+			}
+
 			@media all and (min-width: $xxl) {
 				width: 610px;
 				right: -23%;
@@ -38,6 +42,10 @@
 			width: 190px;
 			top: 40%;
 			right: 65%;
+
+			@media all and (min-width: $md) {
+				width: 250px;
+			}
 
 			@media all and (min-width: $xxl) {
 				width: 373px;
@@ -56,6 +64,10 @@
 				top: -35%;
 			}
 
+			@media all and (min-width: $md) {
+				width: 120px;
+			}
+
 			@media all and (min-width: $xxl) {
 				width: 165px;
 				right: -10%;
@@ -67,6 +79,10 @@
 			width: 70px;
 			top: -37%;
 			right: 70%;
+
+			@media all and (min-width: $md) {
+				width: 100px;
+			}
 
 			@media all and (min-width: $xxl) {
 				width: 172px;
