@@ -1,0 +1,46 @@
+.header {
+	padding: 14px 0;
+	background-color: $black;
+	background: $header-bg;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: auto;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&__nav {}
+
+	&__menu {
+		display: flex;
+
+		&_item {
+			margin-right: 40px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&_link {
+			color: $white;
+			font-family: $ff;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: $fw-bold;
+			line-height: 15px; 
+		}
+	}
+
+	.button {
+		margin-left: 34px;
+	}
+}

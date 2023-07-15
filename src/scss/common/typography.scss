@@ -41,10 +41,10 @@ a {
 	text-decoration: none;
 	transition: color ease-out $tr;
 	color: $white;
-	transition: opacity ease $tr;
+	transition: color ease $tr;
 
 	&:hover {
-		opacity: $op;
+		color: $accent;
 	}
 }
 
