@@ -9,14 +9,14 @@ $xxl: 1366px;
 // Container max-width.
 $container-md: 760px;
 $container-lg: 990px;
-$container-xl: 1200px;
+$container-xl: 1340px;
 
 // Container padding.
-$container-padding: 24px;
+$container-padding: 20px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Mulish', sans-serif;
+$ff-add	    : 'MuseoModerno', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -28,17 +28,33 @@ $fs-xl	: 20px;
 // Font weights.
 $fw-light	: 300;
 $fw-regular	: 400;
-$fw-medium	: 500;
-$fw-semibold: 600;
 $fw-bold	: 700;
+$fw-black	: 800;
+$fw-extra	: 900;
 
 // Line heights.
 $lh			: 1.5;
 $lh-title	: 1.3;
 
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	   : #FFFFFF;
+$black	   : #000000;
+$accent    : #3052FF;
+$green     : #48AE71;
+$timer-bg  : #31304C;
+
+//Backgrounds
+$main-bg  : linear-gradient(237deg, rgba(6, 103, 229, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #000;
+$header-bg: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), linear-gradient(270deg, rgba(2, 21, 46, 0.20) 0%, rgba(1, 5, 10, 0.20) 100%);
+$card-bg  : rgba(48, 82, 255, 0.30); 
+
+//Box-shadows
+$header-bs: 0px 4px 20px 0px rgba(48, 82, 255, 0.10);
+$card-bs  : 0px 3px 80px 0px rgba(48, 82, 255, 0.50) inset;
 
 // Others.
 $tr: 0.35s;
+$op: 0.75;
+
+$bord-10: 10px;
+$bord-20: 20px;
