@@ -2,25 +2,36 @@
 	padding: 14px 0;
 	background-color: $black;
 	background: $header-bg;
+	box-shadow: $header-bs;
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
+		justify-content: center;
+
+		@media all and (min-width: $lg) {
+			justify-content: flex-start;
+		}
 	}
 
 	&__logo {
-		margin-right: auto;
 		transition: opacity ease $tr;
 
 		&:hover {
 			opacity: $op;
 		}
+
+		@media all and (min-width: $lg) {
+			margin-right: auto;
+		}
 	}
 
-	&__nav {}
-
 	&__menu {
-		display: flex;
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+		}
 
 		&_item {
 			margin-right: 40px;
@@ -42,5 +53,10 @@
 
 	.button {
 		margin-left: 34px;
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 	}
 }
