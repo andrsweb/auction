@@ -1,0 +1,17 @@
+.button {
+	color: $white;
+	font-family: $ff;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 15px;
+	border: 1px solid $accent;
+	padding: 20px 40px;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color ease $tr;
+
+	&:hover {
+		background-color: $accent;
+	}
+}

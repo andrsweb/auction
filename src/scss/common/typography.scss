@@ -40,6 +40,8 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	transition: color ease-out $tr;
+	color: $white;
+	transition: opacity ease $tr;
 
 	&:hover {
 		opacity: $op;

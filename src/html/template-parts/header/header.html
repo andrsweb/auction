@@ -21,4 +21,27 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header"></header>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="/" class="header__logo">
+						<img src="img/header/header-logo.png" width="120" height="58" alt="">
+					</a>
+					<nav class="header__nav">
+						<ul class="header__menu">
+							@@loop( './header-nav.html', [
+								{ 'href': '#', 'text': 'Как это работает?'},
+								{ 'href': '#', 'text': 'Товары'},
+								{ 'href': '#', 'text': 'Аукционы'},
+								{ 'href': '#', 'text': 'О нас'},
+								{ 'href': '#', 'text': 'Отзывы'},
+								{ 'href': '#', 'text': 'FAQ'}
+							] )
+						</ul>
+					</nav>
+					<button class="button">
+						Войти
+					</button>
+				</div>
+			</div>
+		</header>
