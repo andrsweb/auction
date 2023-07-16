@@ -1,0 +1,83 @@
+<div class="card">
+	<div class="card__inner">
+		<div class="card__heart">
+			<svg class="heart" width="35" height="35" viewBox="0 0 35 35" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M23.0573 6.5625C25.9788 6.59641 28.4375 9.58781 28.4375 13.125C28.4375 18.7097 21.3609 25.1223 17.4989 27.9923C13.6347 25.1278 6.5625 18.725 6.5625 13.125C6.5625 9.58781 9.02125 6.59641 11.9416 6.5625C14.8597 6.75391 15.2316 7.43859 17.5 9.71141C19.763 7.44406 20.1447 6.75172 23.0573 6.5625ZM22.8714 4.38156L22.8725 4.375C20.7736 4.375 18.877 5.23359 17.5 6.615C16.123 5.23359 14.2264 4.375 12.1275 4.375L12.1286 4.38156C7.70437 4.305 4.375 8.44266 4.375 13.125C4.375 21.875 17.4322 30.625 17.4322 30.625H17.5678C17.5678 30.625 30.625 21.875 30.625 13.125C30.625 8.43609 27.2902 4.305 22.8714 4.38156Z"
+					fill="white" />
+			</svg>
+		</div>
+		<div class="card__img">
+			<div class="swiper @@swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide @@class">
+						<img src="@@src1" width="308" height="176" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="@@src2" width="308" height="176" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="@@src3" width="308" height="176" alt="">
+					</div>
+				</div>
+				<div class="swiper-pagination card-pagination"></div>
+			</div>
+		</div>
+		<div class="card__info">
+			<div class="card__info_top">
+				<div class="card__token">
+					<img src="img/card/small-token.svg" width="21" height="21" alt="">
+					<div class="card__token_price">
+						@@token-price
+					</div>
+				</div>
+				<div class="card__info_price">
+					@@info-price
+				</div>
+			</div>
+			<div class="card__info_goods">
+				@@goods
+			</div>
+			<div class="card__info_group">
+				@@group
+			</div>
+			<div class="card__auction">
+				<div class="card__auction_begin">
+					Начало аукциона
+					<svg class="point" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="9" cy="9" r="5" fill="#49AE71" />
+						<circle cx="9" cy="9" r="6.875" stroke="#49AE71" stroke-width="0.25" />
+						<circle cx="9" cy="9" r="8.75" stroke="#49AE71" stroke-width="0.5" />
+					</svg>
+				</div>
+				<div class="card__auction_date">
+					@@date
+				</div>
+			</div>
+			<div class="card__progress">
+				<div class="card__places">
+					<span class="card__place">Мест:</span>
+					<div class="places__num_text"><span>@@num</span> из 20</div>
+				</div>
+				<svg class="progress_bar" width="157" height="6" viewBox="0 0 157 6" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.5" y="0.5" width="156" height="5" rx="2.5" fill="#31304C" stroke="#704AD9" />
+					<path
+						d="M0.523438 3.00002C0.523438 1.56408 1.6875 0.400024 3.12344 0.400024H103.457V5.60002H3.12343C1.68749 5.60002 0.523438 4.43596 0.523438 3.00002Z"
+						fill="url(#paint0_linear_611_14478)" />
+					<defs>
+						<linearGradient id="paint0_linear_611_14478" x1="0.523437" y1="2.8" x2="103.457" y2="2.79999"
+							gradientUnits="userSpaceOnUse">
+							<stop stop-color="#704AD9" />
+							<stop offset="1" stop-color="#6249FF" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</div>
+		</div>
+		<button class="card__button">
+			Участвовать
+		</button>
+	</div>
+</div>

@@ -22,10 +22,17 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 24px;
+	font-size: 30px;
+	text-align: center;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		color: $white;
+		font-family: $ff;
+		font-size: 45px;
+		font-style: normal;
+		font-weight: $fw-black;
+		line-height: normal;
+		text-align: left; 
 	}
 }
 

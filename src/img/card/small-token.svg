@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<title>small-token-svg</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #130049 } 
+	</style>
+	<path id="Layer" class="s0" d="m10 20c-5.5 0-10-4.5-10-10 0-5.5 4.5-10 10-10 5.5 0 10 4.5 10 10 0 5.5-4.5 10-10 10z"/>
+	<path id="Layer" fill-rule="evenodd" class="s1" d="m20 10c0 5.5-4.5 10-10 10-5.5 0-10-4.5-10-10 0-5.5 4.5-10 10-10 5.5 0 10 4.5 10 10zm-12.9-5.1h-1.7v6.1h1.7zm5.6 0.7h-5.4v4.6h1.9v5.9h1.6v-5.9h1.9zm1.9-0.7h-1.7v6.1h1.7z"/>
+</svg>

@@ -3,6 +3,8 @@
 	background-color: $black;
 	background: $header-bg;
 	box-shadow: $header-bs;
+	position: relative;
+	z-index: 100;
 
 	&__wrapper {
 		display: flex;

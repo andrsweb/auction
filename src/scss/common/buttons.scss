@@ -1,4 +1,4 @@
-.button {
+.button, .card__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,5 +50,26 @@
 			padding: 30px 5px;
 			font-size: 18px;
 		}
+	}
+}
+
+.card__button {
+	color: $white;
+	font-family: $ff;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 15px;
+	letter-spacing: -0.075px;
+	text-transform: capitalize; 
+	border-style: none;
+	background-color: $accent;
+	border-radius: $bord-10;
+	margin-top: 24px;
+	transition: opacity ease $tr;
+	padding: 12px 0;
+
+	&:hover {
+		opacity: $op;
 	}
 }

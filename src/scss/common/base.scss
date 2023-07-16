@@ -19,10 +19,10 @@ body {
 	line-height: $lh;
 	color: $black;
 	background-color: $black;
-	background: $main-bg;
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto
 }
@@ -40,6 +40,8 @@ ul {
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
+	background-color: $black;
+	background: $main-bg;
 
 	.footer {
 		margin-top: auto

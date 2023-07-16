@@ -1,3 +1,6 @@
+//Swiper modules and styles
+@import '../../node_modules/swiper/swiper-bundle.min';
+
 // Defaults styles.
 @import 'common/fonts';
 @import 'common/vars';
@@ -5,6 +8,7 @@
 @import 'common/grid';
 @import 'common/base';
 @import 'common/buttons';
+@import 'common/components';
 
 // Header styles.
 @import 'header/header';
@@ -14,3 +18,4 @@
 
 // Home page sections styles.
 @import 'sections/home/hero';
+@import 'sections/home/how-works';
