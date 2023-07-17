@@ -9,6 +9,7 @@
 @import 'common/base';
 @import 'common/buttons';
 @import 'common/components';
+@import 'common/forPagination';
 
 // Header styles.
 @import 'header/header';
@@ -20,3 +21,4 @@
 @import 'sections/home/hero';
 @import 'sections/home/how-works';
 @import 'sections/home/buy';
+@import 'sections/home/active-auc';

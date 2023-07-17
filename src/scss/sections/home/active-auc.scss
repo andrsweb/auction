@@ -1,0 +1,130 @@
+.active-auctions {
+	padding: 168px 0 160px;
+
+	h2 {
+		margin-bottom: 25px;
+	}
+
+	.active-auction__items {
+		overflow: hidden;
+		width: calc(100vw - (100vw - 1300px) / 2);
+	}
+
+	.active-auc {
+		width: 100%;
+		overflow: visible;
+	}
+	
+	.active-auc-slide {
+		max-width: 322px;
+		display: flex;
+		justify-content: flex-start;
+
+		.card {
+			.point {
+				display: none;
+			}
+		}
+	}
+
+	.active-auc-ui {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 67px;
+		padding-right: 19%;
+	}
+
+	.active-auc-pagination .swiper-pagination-bullet {
+		background-color: transparent;
+		width: 70px;
+		height: 70px;
+		font-family: $ff;
+		color: $white;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			display: block;
+			background-image: url('../img/card/hex.svg');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.auc__pagination {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 30px;
+	}
+
+	.auc__pag {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		width: 70px;
+		height: 70px;
+		position: relative;
+		cursor: pointer;
+		transition: scale ease $tr;
+		margin-right: 50px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:nth-child(-n + 4):hover {
+			svg path {
+				stroke: $white;
+			}
+			scale: 1.05;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			display: block;
+			background-image: url('../img/card/hex.svg');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		&.locked {
+			img {
+				width: 70px;
+				height: 70px;
+			}
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&_img {
+			margin-top: 10px;
+		}
+
+		&_title {
+			color: $white;
+			font-family: $ff;
+			font-size: 8px;
+			font-style: normal;
+			font-weight: $fw-black;
+			line-height: 15px;
+			text-transform: capitalize;
+			position: absolute;
+			left: 50%;
+			bottom: 13px;
+			transform: translateX(-50%);
+		}
+	}
+}

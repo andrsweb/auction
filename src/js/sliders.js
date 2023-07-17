@@ -5,7 +5,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	swiperWithPagination( '.card-swiper' )
-	swiperWithUI( '.works-swiper' )
+	swiperWithUI( '.works-swiper', 1, '.works-pagination', '.works-next', '.works-prev'  )
+	swiperWithCustom( '.active-auc', 4, '.active-auc-pagination', '.active-next', '.active-prev'  )
 } )
 
 const swiperWithPagination = () => {
@@ -25,22 +26,44 @@ const swiperWithPagination = () => {
 	} )
 }
 
-const swiperWithUI = ( selector ) => {
+const swiperWithUI = ( selector, view, pag, next, prev ) => {
 
 	const swiper = new Swiper( selector, {
 		grabCursor: true,
 		loop: true,
+		slidesPerView: view,
 		modules: [ Pagination, Navigation ],
 
 		pagination: {
-			el: '.works-pagination',
+			el: pag,
 			clickable: true,
 			renderBullet: bullet
 		},
 
 		navigation: {
-			nextEl: '.works-next',
-			prevEl: '.works-prev'
+			nextEl: next,
+			prevEl: prev
+		}
+	} )
+}
+
+const swiperWithCustom = ( selector, view, pag, next, prev ) => {
+
+	const swiper = new Swiper( selector, {
+		grabCursor: true,
+		loop: true,
+		slidesPerView: view,
+		spaceBetween: 30,
+		modules: [ Pagination, Navigation ],
+
+		pagination: {
+			el: pag,
+			clickable: true,
+		},
+
+		navigation: {
+			nextEl: next,
+			prevEl: prev
 		}
 	} )
 }
