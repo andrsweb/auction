@@ -1,10 +1,22 @@
 .header {
+	width: 100%;
 	padding: 14px 0;
 	background-color: $black;
 	background: $header-bg;
 	box-shadow: $header-bs;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 100;
+	transition:
+		box-shadow ease $tr,
+		padding ease $tr,
+		background ease $tr;
+
+		&.scrolled {
+			padding: 5px 0;
+			background: $black;
+		}
 
 	&__wrapper {
 		display: flex;
