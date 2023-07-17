@@ -18,18 +18,34 @@
 			width: calc(100% / 3);
 			padding: 0 25px;
 			border-radius: $bord-10;
-			height: 0;
-			overflow: hidden;
 			margin-bottom: 30px;
-
-			&:nth-child( n + 4 ) {
-				margin-bottom: 0;
-			}
+			display: none;
+			opacity: 0;
 
 			&.visible {
+				display: block;
 				height: 350px;
-				transition: height ease 1s,
-							opacity ease 1s;
+				animation: fade 1s forwards ease;
+				opacity: 1;
+
+				@keyframes fade {
+					0% {
+						display: none;
+					}
+
+					1% {
+						display: block;
+						opacity: 0;
+						scale: 0.1;
+						transform: rotate(360deg);
+					}
+
+					100% {
+						opacity: 1;
+						scale: 1;
+						transform: rotate(0);
+					}
+				}
 			}
 		}
 	}
