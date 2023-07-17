@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 21" width="27" height="21">
+	<title>mail-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m2.5 3.3l11 8.1 11-8.1"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m23.1 0.9h-19.2c-1.5 0-2.8 1.3-2.8 2.8v13.7c0 1.6 1.3 2.8 2.8 2.8h19.2c1.5 0 2.8-1.2 2.8-2.8v-13.7c0-1.5-1.3-2.8-2.8-2.8z"/>
+</svg>
