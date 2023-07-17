@@ -61,21 +61,27 @@
 		justify-content: flex-end;
 		margin-bottom: 25px;
 
-		.heart {
+		.heart, .heart-fill {
 			cursor: pointer;
 			transition: scale ease $tr;
 
 			&:hover {
 				scale: 1.05;
 			}
+		}
 
-			&.selected {
-				path {
-					fill: red;
-					stroke: red;
-				}
+		.heart-fill {
+			display: none;
+		}
+
+		&.selected {
+			.heart {
+				display: none;
 			}
-			
+
+			.heart-fill {
+				display: block;
+			}
 		}
 	}
 
@@ -202,6 +208,7 @@
 	}
 
 	&-pagination {
+		width: 100px;
 		display: flex;
 		justify-content: center;
 		margin: 32px 0 24px;
@@ -221,10 +228,5 @@
 
 	.swiper-slide {
 		height: 176px;
-	}
-
-	.swiper-pagination-bullets .swiper-pagination-bullet,
-	.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-		margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2px);
 	}
 }
