@@ -18,6 +18,7 @@
 		background: linear-gradient(180deg, rgba(27, 106, 227, 0.50) 0%, rgba(12, 39, 85, 0.50) 100%);
 		padding: 20px 50px;
 		opacity: 0.4;
+		transition: opacity ease $tr;
 
 		&_inner {
 			display: flex;

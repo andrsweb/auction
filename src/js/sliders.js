@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
@@ -76,7 +76,11 @@ const verticalSlider = () => {
 		loop: true,
 		slidesPerView: 3,
 		spaceBetween: 50,
-		modules: [ Pagination, Navigation ],
+		modules: [ Pagination, Navigation, Autoplay ],
+
+		autoplay: {
+			delay: 2000,
+		},
 	} )
 }
 
