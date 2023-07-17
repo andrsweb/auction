@@ -1,0 +1,69 @@
+.boff {
+	padding: 41px 0 60px;
+
+	h2 {
+		margin-bottom: 60px;
+	}
+
+	&__items {
+		display: flex;
+	}
+
+	&__stat {
+		width: calc(41% - 40px);
+		margin-right: 40px;
+
+		&_item {
+			margin-bottom: 10px;
+		}
+
+		&_title {
+			color: $white;
+			font-family: $ff;
+			font-size: 64px;
+			font-style: normal;
+			font-weight: $fw-extra;
+			line-height: normal;
+			margin-bottom: 10px;
+		}
+	
+		&_text {
+			color: $white;
+			font-family: Mulish;
+			font-size: 40px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: normal; 
+		}
+	}
+
+	&__text {
+		position: relative;
+		width: 59%;
+		color: $white;
+		font-family: $ff;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+		&_top {
+			margin-bottom: 50px;
+		}
+
+		strong {
+			font-weight: $fw-bold;
+		}
+	}
+
+	&-img-1 {
+		position: absolute;
+		bottom: 0;
+		left: 20px;
+	}
+	&-img-2 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
