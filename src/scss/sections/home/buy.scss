@@ -1,34 +1,51 @@
 .buy {
 	padding: 50px 0 150px;
 
+	@media all and (min-width: $lg) {
+		padding: 50px 0 150px;
+	}
+
 	.container {
 		max-width: 1310px;
 	}
 
 	h2 {
-		margin-bottom: 100px;
+		margin-bottom: 40px;
+		text-align: left;
+		padding: 0 8.5%;
+
+		@media all and (min-width: $md) {
+			padding: 0;
+			margin-bottom: 100px;
+		}
 	}
 
 	&__items {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 25px;
+		margin: 0 8px;
+
+		@media all and (min-width: $lg) {
+			margin: 0 25px;
+		}
 
 		&_item {
 			width: calc(100% / 2);
-			padding: 0 25px;
+			padding: 0 8px;
 			border-radius: $bord-10;
 			margin-bottom: 30px;
 			display: none;
 			opacity: 0;
+			height: 150px;
 
 			@media all and (min-width: $lg) {
 				width: calc(100% / 3);
+				height: 350px;
+				padding: 0 25px;
 			}
 
 			&.visible {
 				display: block;
-				height: 350px;
 				animation: fade 1s forwards ease;
 				opacity: 1;
 
@@ -51,6 +68,15 @@
 					}
 				}
 			}
+
+			&.mob {
+				display: block;
+				opacity: 1;
+				@media all and (min-width: $lg) {
+					display: none;
+				}
+
+			}
 		}
 	}
 
@@ -63,7 +89,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		padding: 20px;
+		padding: 10px 15px;
+
+		@media all and (min-width: $lg) {
+			padding: 20px;
+		}
 	}
 
 	&__item_img {
@@ -71,18 +101,25 @@
 		left: 0;
 		top: 0;
 		z-index: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	&__item_title {
 		color: $white;
 		font-family: $ff;
-		font-size: 25px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-black;
 		line-height: normal;
 		margin-bottom: 10px;
 		position: relative;
 		z-index: 1;
+
+		@media all and (min-width: $lg) {
+			font-size: 25px;
+		}
 	}
 
 	&__item_text {
@@ -90,15 +127,29 @@
 		z-index: 1;
 		color: $white;
 		font-family: $ff;
-		font-size: 15px;
+		font-size: 10px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
+		width: 121px;
+		height: 26px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+			width: 310px;
+			height: 40px;
+		}
 	}
 
 	.buy__button {
 		display: flex;
 		justify-content: center;
-		margin-top: 70px;
+		margin-top: 5px;
+
+		@media all and (min-width: $lg) {
+			margin-top: 70px;
+		}
 	}
 }

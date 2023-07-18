@@ -41,12 +41,17 @@
 
 //card
 .card {
-	width: 322px;
-	height: 580px;
+	width: 202px;
+	height: 363px;
 	padding: 12px 15px 12px 15px;
 	background: $card-bg;
 	border-radius: $bord-20;
 	box-shadow: $card-bs;
+
+	@media all and (min-width: $lg) {
+		width: 322px;
+		height: 580px;
+	}
 
 	@media all and (min-width: $lg) {
 		padding: 25px;
@@ -55,7 +60,7 @@
 	&__inner {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		width: 100%;
 		height: 100%;
 	}
@@ -63,9 +68,10 @@
 	&__heart {
 		display: flex;
 		justify-content: flex-end;
-		margin-bottom: 25px;
+		margin-bottom: 23px;
 
-		.heart, .heart-fill {
+		.heart,
+		.heart-fill {
 			width: 22px;
 			height: 22px;
 			cursor: pointer;
@@ -93,6 +99,16 @@
 			.heart-fill {
 				display: block;
 			}
+		}
+	}
+
+	&__img {
+		height: 176px;
+		position: relative;
+		margin-bottom: 5px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 60px;
 		}
 	}
 
@@ -228,7 +244,7 @@
 			position: absolute;
 			right: -113px;
 			top: 50%;
-			transform: translateY( -50% );
+			transform: translateY(-50%);
 
 			@media all and (min-width: $lg) {
 				left: -24px;
@@ -267,12 +283,7 @@
 		width: 100px;
 		display: flex;
 		justify-content: center;
-		margin: 32px 0 10px;
 		position: relative;
-
-		@media all and (min-width: $lg) {
-			margin: 112px 0 24px;
-		}
 
 		.swiper-pagination-bullet {
 			background: $white;
@@ -292,7 +303,12 @@
 	}
 
 	.swiper-slide {
-		height: 176px;
+		height: 130px;
+
+		@media all and (min-width: $lg) {
+			height: 205px;
+		}
+
 	}
 }
 

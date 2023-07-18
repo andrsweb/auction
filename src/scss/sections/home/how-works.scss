@@ -1,5 +1,5 @@
 .works {
-	padding: 45px 0 170px;
+	padding: 45px 0 95px;
 
 	@media all and (min-width: $lg) {
 		padding: 285px 0 170px;
@@ -111,20 +111,6 @@
 			margin-left: 15%;
 			justify-content: flex-start;
 			order: 2;
-		}
-
-		.card {
-			width: 202px;
-			height: 363px;
-
-			@media all and (min-width: $lg) {
-				width: 322px;
-				height: 580px;
-			}
-
-			.swiper-slide {
-				height: 92px;
-			}
 		}
 	}
 
