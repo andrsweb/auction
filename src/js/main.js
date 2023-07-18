@@ -12,3 +12,6 @@ import './showItems'
 
 //Dropdowns
 import './dropdowns'
+
+//Running numbers
+import './runningNum'
