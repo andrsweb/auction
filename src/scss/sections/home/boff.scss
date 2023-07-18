@@ -7,11 +7,20 @@
 
 	&__items {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&__stat {
-		width: calc(41% - 40px);
+		width: 100%;
 		margin-right: 40px;
+
+		@media all and (min-width: $lg) {
+			width: calc(41% - 40px);
+		}
 
 		&_item {
 			margin-bottom: 10px;
@@ -20,35 +29,52 @@
 		&_title {
 			color: $white;
 			font-family: $ff;
-			font-size: 64px;
+			font-size: 30px;
 			font-style: normal;
 			font-weight: $fw-extra;
 			line-height: normal;
 			margin-bottom: 10px;
+
+			@media all and (min-width: $lg) {
+				font-size: 64px;
+			}
 		}
 	
 		&_text {
 			color: $white;
 			font-family: Mulish;
-			font-size: 40px;
+			font-size: 20px;
 			font-style: normal;
 			font-weight: $fw-regular;
-			line-height: normal; 
+			line-height: normal;
+
+			@media all and (min-width: $lg) {
+				font-size: 40px;
+			}
 		}
 	}
 
 	&__text {
 		position: relative;
-		width: 59%;
+		
 		color: $white;
 		font-family: $ff;
-		font-size: 23px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
 
+		@media all and (min-width: $lg) {
+			font-size: 23px;
+			width: 59%;
+		}
+
 		&_top {
-			margin-bottom: 50px;
+			margin-bottom: 20px;
+
+			@media all and (min-width: $lg) {
+				margin-bottom: 50px;
+			}
 		}
 
 		strong {
@@ -57,13 +83,23 @@
 	}
 
 	&-img-1 {
+		display: none;
 		position: absolute;
 		bottom: 0;
 		left: 20px;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 	}
 	&-img-2 {
+		display: none;
 		position: absolute;
 		right: 0;
 		bottom: 0;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 	}
 }
