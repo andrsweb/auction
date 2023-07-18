@@ -1,8 +1,12 @@
 .active-auctions {
-	padding: 168px 0 160px;
+	padding: 115px 0 160px;
 
 	h2 {
-		margin-bottom: 25px;
+		margin-bottom: 50px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 25px;
+		}
 	}
 
 	.active-auction__items {
@@ -16,9 +20,13 @@
 	}
 	
 	.active-auc-slide {
-		max-width: 322px;
+		max-width: 202px;
 		display: flex;
 		justify-content: flex-start;
+
+		@media all and (min-width: $lg) {
+			max-width: 322px;
+		}
 
 		.card {
 			.point {
