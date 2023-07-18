@@ -315,3 +315,47 @@
 .btn-reverse {
 	transform: rotate(180deg);
 }
+
+.highlight {
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: opacity ease $tr,
+				visibility ease $tr;
+
+	&_link {
+		display: block;
+		width: 15px;
+		height: 15px;
+		margin-bottom: 38px;
+		background: linear-gradient(180deg, #569AFF 0%, #503AD9 56.25%, #3B27B7 100%);
+		box-shadow: 0px 3px 25px 0px #6249FF;
+		transform: rotate(45deg);
+		transition: scale ease 0.5s;
+
+		&.active {
+			scale: 1.5;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&.scrolled {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	@media all and (min-width: $xl) {
+		display: block;
+		left: 1%;
+	}
+
+	@media all and (min-width: $xxl) {
+		left: 7%;
+	}
+}
