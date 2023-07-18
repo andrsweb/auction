@@ -46,6 +46,7 @@
     "last 3 versions"
   ],
   "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^10.0.4"
   }
 }

@@ -2,6 +2,7 @@ import './common/common'
 
 //header
 import './header'
+import './forAnchors'
 
 //For card
 import './sliders'
