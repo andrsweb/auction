@@ -1,4 +1,5 @@
-.button, .card__button {
+.button,
+.card__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,6 +51,40 @@
 			padding: 30px 5px;
 			font-size: 18px;
 		}
+
+		&.border {
+			border-radius: $bord-10;
+		}
+	}
+
+	&.transparent {
+		color: $white;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: normal;
+		max-width: 137px;
+		border: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {}
+
+		.heart {
+			margin-right: 10px;
+		}
+
+		.heart-fill {
+			display: none;
+		}
+
+		&:hover {
+			opacity: $op;
+			background-color: transparent;
+		}
 	}
 }
 
@@ -61,7 +96,7 @@
 	font-weight: $fw-bold;
 	line-height: 15px;
 	letter-spacing: -0.075px;
-	text-transform: capitalize; 
+	text-transform: capitalize;
 	border-style: none;
 	background-color: $accent;
 	border-radius: 5px;

@@ -1,0 +1,99 @@
+.auc-hero {
+	padding: 70px 0;
+
+	h1 {
+		color: $white;
+		font-family: $ff;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: $fw-black;
+		line-height: normal;
+		margin-bottom: 31px;
+	}
+
+	&__text, &__title {
+		color: $white;
+		font-family: $ff;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal; 
+	}
+
+	&__title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		margin-top: 54px;
+		max-width: 1240px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		width: 46%;
+		padding-left: 4%;
+	}
+
+	&__info {
+		width: 54%;
+
+		.hero__info_inner {
+			padding: 30px;
+			border-radius: $bord-10;
+			background: rgba(0, 0, 0, 0.50);
+		}
+	}
+
+	&__inner {
+		background-color: $white;
+	}
+
+	&__row {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__col {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		color: #E1E1E1;
+		font-family: $ff;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 25px;
+	
+		
+		&:last-child {
+			justify-content: flex-end;
+		}
+	}
+
+	.auc-hero__buttons {
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.blue {
+			margin-right: 45px;
+		}
+	}
+
+	.click-value, .auc-hero_value,
+	.date, .time {
+		font-weight: $fw-extra;
+	}
+}

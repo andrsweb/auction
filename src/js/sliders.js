@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	swiperWithPagination('.card-swiper')
 	swiperWithUI('.works-swiper', 1, '.works-pagination', '.works-next', '.works-prev')
+	swiperWithUI('.other-lots', 5, false, false, false)
 	swiperWithCustom('.active-auc', '.active-auc-pagination', '.active-next', '.active-prev')
 	verticalSlider()
 })

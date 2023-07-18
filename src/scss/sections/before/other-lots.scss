@@ -1,0 +1,33 @@
+.other {
+	padding: 5px 0 100px;
+
+	.container-fluid {
+		max-width: 1850px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		color: $white;
+		font-family: $ff;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: $fw-black;
+		line-height: normal;
+		position: relative;
+		margin-bottom: 25px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+		}
+	}
+
+	.other-slide {
+		width: 322px;
+	}
+}
