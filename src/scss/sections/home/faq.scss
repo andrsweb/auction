@@ -1,35 +1,58 @@
 .faq {
-	padding: 133px 0 53px;
+	padding: 163px 0 53px;
+
+	@media all and (min-width: $lg) {
+		padding: 133px 0 53px;
+	}
 
 	h2 {
 		margin-bottom: 65px;
+		text-align: left;
+
+		@media all and (min-width: $md) {
+			text-align: center;
+		}
 	}
 
 	&-dropdowns {
 		position: relative;
 
 		.dropdown-img-1 {
+			display: none;
 			position: absolute;
 			top: 60px;
 			right: -100px;
+
+			@media all and (min-width: $xxl) {
+				display: block;
+			}
 		}
 
 		.dropdown-img-2 {
+			display: none;
 			position: absolute;
 			bottom: 210px;
 			right: -210px;
+
+			@media all and (min-width: $xxl) {
+				display: block;
+			}
 		}
 	}
 
 	.show-more-dropdowns {
 		color: $accent;
 		font-family: $ff;
-		font-size: 24px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: normal;
 		cursor: pointer;
 		transition: opacity ease $tr;
+
+		@media all and (min-width: $md) {
+			font-size: 24px;
+		}
 
 		&:hover {
 			opacity: $op;

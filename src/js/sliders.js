@@ -83,11 +83,31 @@ const swiperWithCustom = (selector, pag, next, prev) => {
 const verticalSlider = () => {
 	const swiper = new Swiper('.testi-swiper', {
 		grabCursor: true,
-		direction: 'vertical',
 		loop: true,
 		slidesPerView: 3,
 		spaceBetween: 50,
 		modules: [Pagination, Navigation, Autoplay],
+
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				direction: 'horizontal',
+			},
+
+			568: {
+				slidesPerView: 2,
+			},
+
+			992: {
+				slidesPerView: 3,
+				direction: 'vertical',
+			}
+		},
+
+		pagination: {
+			el: '.testi-pagination',
+			clickable: true,
+		},
 
 		autoplay: {
 			delay: 2000,

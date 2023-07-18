@@ -6,13 +6,17 @@
 		display: inline-block;
 		color: $white;
 		font-family: $ff;
-		font-size: 24px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
 		margin-bottom: 10px;	
 		cursor: pointer;
 		transition: scale ease $tr;
+
+		@media all and (min-width: $md) {
+			font-size: 24px;
+		}
 
 		&:hover {
 			scale: 1.009;
@@ -22,11 +26,15 @@
 	&-text {
 		color: $white;
 		font-family: $ff;
-		font-size: 15px;
+		font-size: 12px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
 		max-width: 1000px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
 	}
 
 	.dropdown-open {

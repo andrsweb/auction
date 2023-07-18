@@ -6,11 +6,25 @@
 	&__wrapper {
 		width: 100%;
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	&__logo {
-		margin-right: 18.5%;
+		margin-bottom: 30px;
 		transition: opacity ease $tr;
+		margin: 0 auto 30px auto;
+
+		@media all and (min-width: $md) {
+			margin-right: 10%;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-right: 18.5%;
+		}
 
 		&:hover {
 			opacity: $op;
@@ -18,11 +32,20 @@
 	}
 
 	&__nav {
-		width: 58%;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			width: 58%;
+		}
 	}
 
 	&__row {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	&__col, &__contacts_title {
@@ -35,14 +58,23 @@
 	}
 
 	&__col {
-		width: 50%;
+		width: 100%;
 		margin-bottom: 10px;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+		}
 	}
 
 	&__contacts {
 		display: flex;
 		flex-direction: column;
-		margin-left: auto;
+		margin-top: 30px;
+
+		@media all and (min-width: $md) {
+			margin-left: auto;
+			margin-top: 0;
+		}
 
 		&_links {
 			display: flex;
@@ -66,5 +98,9 @@
 		display: flex;
 		justify-content: center;
 		margin: 35px 0 25px;
+	}
+
+	.empty {
+		margin-bottom: 0;
 	}
 }
