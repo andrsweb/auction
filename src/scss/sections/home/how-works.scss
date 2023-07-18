@@ -15,12 +15,16 @@
 		}
 
 		&_info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 			width: 100%;
 			max-width: 709px;
 			padding-top: 52px;
 			order: 2;
 
 			@media all and (min-width: $lg) {
+				align-items: flex-start;
 				padding-top: 100px;
 				order: 1;
 			}
@@ -50,16 +54,16 @@
 					margin-bottom: 61px;
 				}
 			}
-
 		}
 
 		.green__boarder {
 			margin-top: 10px;
-			max-width: 668px;
+			max-width: 349px;
 			position: relative;
 
 			@media all and (min-width: $lg) {
 				margin-top: 46px;
+				max-width: 668px;
 			}
 
 			.section__text {
@@ -73,17 +77,24 @@
 
 			.line {
 				position: absolute;
-				right: -50px;
-				top: -62px;
+				right: -41px;
+				top: -72px;
 				transform: rotate(60deg);
 				display: block;
-				width: 170px;
+				width: 164px;
 				height: 1px;
 				background-color: $green;
 
 				@media all and (min-width: $lg) {
+					right: -33.4%;
+					top: 25px;
+					transform: rotate(19deg);
+					width: 160px;
+				}
+
+				@media all and (min-width: $xl) {
 					right: -37.4%;
-					top: 125px;
+					top: 122px;
 					transform: rotate(17deg);
 					width: 254px;
 				}
