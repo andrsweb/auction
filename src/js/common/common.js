@@ -6,11 +6,6 @@ window.addEventListener('resize', () => {
 
 export const getWindowHeight = () => windowHeight
 
-
-export const numberWithDots = x => {
-	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-}
-
 export const isInScope = ( elementSelector, st, offset = 0 ) => {
 	const element  = document.querySelector( elementSelector )
 	if ( ! element) return

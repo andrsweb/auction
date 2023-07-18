@@ -1,4 +1,4 @@
-import { isInScope, numberWithDots } from './common/common'
+import { isInScope } from './common/common'
 
 
 document.addEventListener( 'DOMContentLoaded', () => {   
@@ -19,10 +19,10 @@ function outNum( elem) {
             n = n + step
     
             if (n  >= limit) {
-                elem.innerHTML = numberWithDots(limit)
+                elem.innerHTML = limit
                 clearInterval(interval)
             }   else {
-                elem.innerHTML = numberWithDots(n)
+                elem.innerHTML = n
             }
         }, stepTime)
     })
@@ -35,6 +35,6 @@ document.addEventListener( 'scroll', () => {
 
     if ( isInScope( '.boff', window.scrollY ) ) {
         stats.classList.add('scrolled')
-        outNum('.boff__stat_title')
+        outNum('.boff__stat_title span')
     } 
 } )
