@@ -1,14 +1,19 @@
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
 	font-family: $ff;
 	font-weight: $fw-bold;
 	line-height: $lh-title;
 	margin: 0;
 }
 
-h1, .h1 {
+h1,
+.h1 {
 	font-size: 30px;
 	color: $white;
 
@@ -17,30 +22,33 @@ h1, .h1 {
 		font-size: 64px;
 		font-style: normal;
 		font-weight: $fw-extra;
-		line-height: normal; 
+		line-height: normal;
 	}
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	font-size: 30px;
+	color: $white;
+	font-family: $ff;
 	text-align: center;
+	font-style: normal;
+	font-weight: $fw-black;
+	line-height: normal;
 
 	@media all and (min-width: $lg) {
-		color: $white;
-		font-family: $ff;
 		font-size: 45px;
-		font-style: normal;
-		font-weight: $fw-black;
-		line-height: normal;
-		text-align: left; 
+		text-align: left;
 	}
 }
 
-h3, .h3 {
+h3,
+.h3 {
 	font-size: 30px
 }
 
-h4, .h4 {
+h4,
+.h4 {
 	font-size: $fs-xl;
 
 	@media all and (min-width: $lg) {
@@ -65,7 +73,8 @@ p {
 	margin: 0;
 }
 
-b, strong {
+b,
+strong {
 	color: $accent;
 	font-weight: $fw-bold;
 }

@@ -117,19 +117,23 @@
 	.section__text {
 		margin: 8px 0;
 		max-width: 893px;
+		font-size: 20px;
 
 		@media all and (min-width: $lg) {
 			margin: 20px 0;
+			font-size: 40px;
 		}
 	}
 
 	.section__subtext {
 		max-width: 268px;
 		margin: 0 auto;
+		font-size: 15px;
 
 		@media all and (min-width: $lg) {
 			max-width: 428px;
 			margin: 0;
+			font-size: 24px;
 		}
 	}
 }

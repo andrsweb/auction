@@ -56,7 +56,7 @@
 .card__button {
 	color: $white;
 	font-family: $ff;
-	font-size: 15px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: $fw-bold;
 	line-height: 15px;
@@ -64,10 +64,17 @@
 	text-transform: capitalize; 
 	border-style: none;
 	background-color: $accent;
-	border-radius: $bord-10;
-	margin-top: 24px;
+	border-radius: 5px;
+	margin-top: 10px;
 	transition: opacity ease $tr;
-	padding: 12px 0;
+	padding: 4px 0;
+
+	@media all and (min-width: $lg) {
+		font-size: 15px;
+		padding: 12px 0;
+		margin-top: 24px;
+		border-radius: $bord-10;
+	}
 
 	&:hover {
 		opacity: $op;

@@ -2,7 +2,7 @@
 .section__text {
 	color: $white;
 	font-family: $ff;
-	font-size: 20px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: $fw-regular;
 	line-height: normal;
@@ -17,7 +17,7 @@
 .section__subtext {
 	color: $white;
 	font-family: $ff;
-	font-size: 15px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: $fw-regular;
 	line-height: normal;
@@ -43,10 +43,14 @@
 .card {
 	width: 322px;
 	height: 580px;
-	padding: 25px;
+	padding: 12px 15px 12px 15px;
 	background: $card-bg;
 	border-radius: $bord-20;
 	box-shadow: $card-bs;
+
+	@media all and (min-width: $lg) {
+		padding: 25px;
+	}
 
 	&__inner {
 		display: flex;
@@ -62,8 +66,15 @@
 		margin-bottom: 25px;
 
 		.heart, .heart-fill {
+			width: 22px;
+			height: 22px;
 			cursor: pointer;
 			transition: scale ease $tr;
+
+			@media all and (min-width: $lg) {
+				width: 35px;
+				height: 35px;
+			}
 
 			&:hover {
 				scale: 1.05;
@@ -86,20 +97,39 @@
 	}
 
 	&__token {
-		width: 72px;
+		width: 55px;
 		display: flex;
 		justify-content: space-between;
-		padding: 5px;
+		padding: 3px;
 		background: rgba(48, 82, 255, 0.50);
 		border-radius: 5px;
+
+		@media all and (min-width: $lg) {
+			width: 72px;
+			padding: 5px;
+		}
 
 		&_price {
 			color: $white;
 			font-family: $ff-add;
-			font-size: 15px;
+			font-size: 12px;
 			font-style: normal;
 			font-weight: $fw-extra;
 			line-height: normal;
+
+			@media all and (min-width: $lg) {
+				font-size: 15px;
+			}
+		}
+
+		img {
+			width: 17px;
+			height: 17px;
+
+			@media all and (min-width: $lg) {
+				width: 21px;
+				height: 21px;
+			}
 		}
 	}
 
@@ -114,35 +144,48 @@
 		&_goods {
 			color: $white;
 			font-family: $ff;
-			font-size: 18px;
+			font-size: 15px;
 			font-style: normal;
 			font-weight: $fw-black;
 			line-height: 15px;
 			letter-spacing: 0.9px;
 			text-transform: uppercase;
-			margin-top: 30px;
+			margin-top: 20px;
+
+			@media all and (min-width: $lg) {
+				font-size: 18px;
+				margin-top: 30px;
+			}
 		}
 
 		&_group {
 			color: $white;
 			font-family: $ff;
-			font-size: 10px;
+			font-size: 8px;
 			font-style: normal;
 			font-weight: $fw-light;
 			line-height: normal;
 			text-decoration-line: underline;
 			margin-top: 5px;
+
+			@media all and (min-width: $lg) {
+				font-size: 10px;
+			}
 		}
 
 		&_price {
 			color: $white;
 			font-family: $ff;
-			font-size: 18px;
+			font-size: 12px;
 			font-style: normal;
 			font-weight: $fw-black;
 			line-height: 15px;
 			letter-spacing: 0.9px;
 			text-transform: uppercase;
+
+			@media all and (min-width: $lg) {
+				font-size: 18px;
+			}
 		}
 	}
 
@@ -150,7 +193,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 30px;
+		margin-top: 10px;
+
+		@media all and (min-width: $lg) {
+			margin-top: 30px;
+		}
 	}
 
 	&__auction_begin,
@@ -159,10 +206,14 @@
 	.places__num_text {
 		color: $card;
 		font-family: $ff;
-		font-size: 15px;
+		font-size: 10px;
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: -0.675px;
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+		}
 	}
 
 	&__auction_begin,
@@ -175,9 +226,14 @@
 
 		.point {
 			position: absolute;
-			left: -24px;
+			right: -113px;
 			top: 50%;
 			transform: translateY( -50% );
+
+			@media all and (min-width: $lg) {
+				left: -24px;
+				top: 50%;
+			}
 		}
 	}
 
@@ -211,17 +267,26 @@
 		width: 100px;
 		display: flex;
 		justify-content: center;
-		margin: 32px 0 24px;
+		margin: 32px 0 10px;
 		position: relative;
+
+		@media all and (min-width: $lg) {
+			margin: 32px 0 24px;
+		}
 
 		.swiper-pagination-bullet {
 			background: $white;
 			opacity: 1;
-			width: 6px;
-			height: 6px;
+			width: 3px;
+			height: 3px;
 
 			&-active {
 				background: #556BDC;
+			}
+
+			@media all and (min-width: $lg) {
+				width: 6px;
+				height: 6px;
 			}
 		}
 	}
