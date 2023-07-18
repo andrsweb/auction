@@ -40,7 +40,7 @@
 		}
 	}
 
-	&__menu {
+	&__menu, &-auc__nav {
 		display: none;
 
 		@media all and (min-width: $lg) {
