@@ -6,7 +6,6 @@
 	}
 
 	.header__logo {
-		margin-right: 100px;
 
 		@media all and (min-width: $lg) {
 			margin-right: 100px;
@@ -59,6 +58,25 @@
 
 		@media all and (min-width: $lg) {
 			display: flex;
+		}
+
+		.hexagon__wrapper {
+			position: relative;
+			width: 60px;
+			height: 60px;
+			
+			padding: 0;
+		}
+
+		.header-avatar {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 60px;
+			height: 60px;
+			object-fit: cover;
+			clip-path:polygon(50% 2%, 92% 26%, 92% 74%, 50% 98%, 7.5% 73%, 7.5% 25%);
+			z-index: -1;
 		}
 
 		&_img {

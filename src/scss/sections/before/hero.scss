@@ -1,14 +1,25 @@
 .auc-hero {
-	padding: 70px 0;
+	padding: 55px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 70px 0;
+	}
 
 	h1 {
 		color: $white;
 		font-family: $ff;
-		font-size: 30px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: $fw-black;
 		line-height: normal;
-		margin-bottom: 31px;
+		margin-bottom: 38px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+			text-align: left;
+			margin-bottom: 31px;
+		}
 	}
 
 	&__text, &__title {
@@ -21,32 +32,77 @@
 	}
 
 	&__title {
-		font-size: 30px;
+		font-size: 18px;
 		margin-bottom: 30px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+		}
 	}
 
 	&__text {
 		margin-top: 54px;
 		max-width: 1240px;
+		font-size: 12px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
 	}
 
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&__img {
-		width: 46%;
-		padding-left: 4%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 57px;
+
+		@media all and (min-width: $lg) {
+			width: 46%;
+			padding-left: 4%;
+			justify-content: flex-start;
+			margin-bottom: 0;
+		}
+
+		img {
+			max-width: 270px;
+
+			@media all and (min-width: $lg) {
+				max-width: 510px;
+			}
+		}
 	}
 
 	&__info {
-		width: 54%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		@media all and (min-width: $lg) {
+			width: 54%;
+			justify-content: flex-start;
+		}
+
+		&_item {
+			width: 100%;
+		}
 
 		.hero__info_inner {
-			padding: 30px;
+			padding: 30px 10px;
 			border-radius: $bord-10;
 			background: rgba(0, 0, 0, 0.50);
+
+			@media all and (min-width: $lg) {
+				padding: 30px;
+			}
 		}
 	}
 
@@ -70,10 +126,16 @@
 		align-items: center;
 		color: #E1E1E1;
 		font-family: $ff;
-		font-size: 15px;
+		font-size: 12px;
 		font-style: normal;
 		font-weight: $fw-regular;
-		line-height: 25px;
+		line-height: normal;
+		white-space: nowrap;
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+			line-height: 25px;
+		}
 	
 		
 		&:last-child {
@@ -82,10 +144,14 @@
 	}
 
 	.auc-hero__buttons {
-		margin-top: 30px;
+		margin-top: 25px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@media all and (min-width: $lg) {
+			margin-top: 30px;
+		}
 
 		.blue {
 			margin-right: 45px;

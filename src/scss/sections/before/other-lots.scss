@@ -9,12 +9,17 @@
 	h2 {
 		color: $white;
 		font-family: $ff;
-		font-size: 30px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: $fw-black;
 		line-height: normal;
 		position: relative;
 		margin-bottom: 25px;
+		text-align: left;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+		}
 
 		&::after {
 			content: "";
@@ -28,6 +33,10 @@
 	}
 
 	.other-slide {
-		width: 322px;
+		width: 202px;
+
+		@media all and (min-width: $lg) {
+			width: 322px;
+		}
 	}
 }

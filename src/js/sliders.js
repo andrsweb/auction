@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	swiperWithPagination('.card-swiper')
 	swiperWithUI('.works-swiper', 1, '.works-pagination', '.works-next', '.works-prev')
-	swiperWithUI('.other-lots', 5, false, false, false)
+	swiperWithCustom('.other-lots', 5, false, false, false)
 	swiperWithCustom('.active-auc', '.active-auc-pagination', '.active-next', '.active-prev')
 	verticalSlider()
 })
@@ -54,20 +54,9 @@ const swiperWithCustom = (selector, pag, next, prev) => {
 	const swiper = new Swiper(selector, {
 		grabCursor: true,
 		loop: true,
+		slidesPerView: 'auto',
 		spaceBetween: 30,
 		modules: [Pagination, Navigation],
-
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-			},
-			768: {
-				slidesPerView: 3,
-			},
-			1366: {
-				slidesPerView: 4,
-			}
-		},
 
 		pagination: {
 			el: pag,
