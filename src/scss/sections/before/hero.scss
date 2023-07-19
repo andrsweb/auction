@@ -96,4 +96,16 @@
 	.date, .time {
 		font-weight: $fw-extra;
 	}
+
+	.button__heart {
+		&.selected {
+			.heart {
+				display: none;
+			}
+
+			.heart-fill {
+				display: block;
+			}
+		}
+	}
 }

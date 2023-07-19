@@ -1,19 +1,20 @@
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
-	fillHearts()
+	fillHearts('.card', '.card__heart', '.card__heart' )
+	fillHearts('.button.transparent', '.heart', '.button__heart' )
 } )
 
-const fillHearts = () => {
-	const cards = document.querySelectorAll( '.card' )
-	const heart = document.querySelector( '.card__heart' )
+const fillHearts = ( selector, img, closest ) => {
+	const cards = document.querySelectorAll( selector )
+	const heart = document.querySelector( img )
 
 	if( ! cards.length && ! heart ) return
 
 	cards.forEach( card => {
 		card.addEventListener('click', e => {
 			const target = e.target
-			const heart = target.closest('.card__heart')
+			const heart = target.closest( closest)
 		
 			if( !heart ) return
 		
