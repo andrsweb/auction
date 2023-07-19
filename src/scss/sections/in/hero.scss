@@ -197,4 +197,25 @@
 		text-align: center;
 		font-size: 12px;
 	}
+
+	&__winner_text {
+		color: $white;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 15px;
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	&__winner_name {
+		color: $white;
+		font-family: $ff;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: $fw-black;
+		line-height: 15px;
+		margin-top: 15px;
+	}
 }
