@@ -125,3 +125,32 @@
 		opacity: $op;
 	}
 }
+
+.auc__button {
+	color: $white;
+	font-family: $ff;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: $fw-black;
+	line-height: normal; 
+	border: 0;
+	border-radius: 50%;
+	border-style: none;
+	background-color: $green;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 44%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	transition: opacity ease $tr;
+
+	&:hover {
+		opacity: $op;
+	}
+
+	span {
+		font-family: $ff-add;
+	}
+}

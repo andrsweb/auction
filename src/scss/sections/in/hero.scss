@@ -1,0 +1,200 @@
+.auc-hero {
+
+	&__info {
+		flex-direction: column;
+	}
+
+	&__members {
+		margin-top: 20px;
+
+		@media all and (min-width: $xl) {
+			margin-top: 54px;
+		}
+
+		&_wrapper {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			@media all and (min-width: $xl) {
+				flex-direction: row;
+			}
+		}
+
+		&_row {
+			display: flex;
+			margin-top: -3px;
+
+			&:nth-child(2) {
+				padding-left: 23px;
+			}
+
+			&:nth-child(4) {
+				padding-left: 23px;
+			}
+		}
+
+		&_peoples {
+			position: relative;
+			margin-bottom: 30px;
+
+			@media all and (min-width: $xl) {
+				margin-right: 60px;
+				margin-bottom: 0;
+			}
+		}
+
+		&_timer {
+			position: relative;
+		}
+
+		.member_img {
+			margin-right: 4px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.hexagon__wrapper {
+				position: relative;
+				width: 38px;
+				height: 38px;
+				z-index: 2;
+				clip-path: polygon(50% 0.4%, 93% 25%, 93% 74.3%, 50% 98.5%, 7.6% 74%, 7.6% 25%);
+
+				@media all and (min-width: $md) {
+					width: 45px;
+					height: 45px;
+				}
+
+				.hexagon {
+					width: 45px;
+					height: 45px;
+					position: relative;
+					z-index: 10;
+				}
+
+				.member-avatar {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+
+	.auc__history {
+		color: #FFF;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		margin-top: 25px;
+
+		&_log {
+			height: 100px;
+			overflow-y: auto;
+			scrollbar-color: $accent  #252E3B;
+			scrollbar-width: thin;
+
+			&::-webkit-scrollbar {
+				width: 7px;
+				height: 8px;
+				background-color: $accent;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background-color: #143861;
+			}
+
+		}
+
+		&_start {
+			margin-bottom: 6px;
+		}
+
+		&_inner {
+			background-color: $black;
+			display: flex;
+			flex-direction: column;
+			padding: 15px 30px;
+			color: $white;
+			font-family: $ff;
+			font-size: 10px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: normal;
+
+			@media all and (min-width: $lg) {
+				font-size: 12px;
+			}
+
+			h4 {
+				color: $white;
+				font-family: $ff;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: $fw-black;
+				line-height: normal;
+				margin-bottom: 15px;
+
+				@media all and (min-width: $lg) {
+					font-size: 15px;
+				}
+			}
+		}
+
+		.log__item {
+			display: flex;
+			margin-bottom: 4px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.hexagon__wrapper {
+			position: relative;
+			width: 20px;
+			height: 20px;
+			background-color: wheat;
+			clip-path: polygon(50% 0.4%, 93% 25%, 93% 74.3%, 50% 98.5%, 7.6% 74%, 7.6% 25%);
+			margin-left: 3px;
+		}
+
+		.member-avatar {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.user {
+			display: flex;
+			font-weight: $fw-black;
+			margin: 0 4px;
+		}
+	}
+
+	.hero__item_show {
+		color: $white;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	.hero__item_time {
+		font-weight: $fw-black;
+		color: $white;
+		text-align: center;
+		font-size: 12px;
+	}
+}
