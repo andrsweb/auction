@@ -1,0 +1,139 @@
+.all {
+	padding: 70px 0 100px;
+
+	.container {
+		max-width: 1780px;
+	}
+
+	aside {
+		position: fixed;
+		top: 160px;
+		left: 80px;
+		display: none;
+
+		@media all and (min-width: $xl) {
+			display: block;
+		}
+
+		.auc__nav_item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			color: $white;
+			font-family: $ff;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: $fw-black;
+			line-height: 15px;
+			width: 220px;
+			margin-bottom: 25px;
+			cursor: pointer;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.auc__menu_input {
+			position: relative;
+			margin-bottom: 40px;
+
+			.input {
+				padding: 7px 0;
+				border-radius: 5px;
+				border: 1px solid $accent;
+				width: 100%;
+				color: $white;
+				background-color:  #252E3B;
+				font-family: $ff;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: $fw-bold;
+				line-height: 15px;
+				position: relative;
+
+				&::placeholder {
+					color: $white;
+					background-color:  #252E3B;
+					font-family: $ff;
+					font-size: 12px;
+					font-style: normal;
+					font-weight: $fw-bold;
+					line-height: 15px;
+					text-align: center;
+				}
+			}
+			
+			&::after {
+				content: "";
+				display: block;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				right: 14px;
+				top: 50%;
+				transform: translateY(-50%);
+				background-image: url('../img/active-auc/loup.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__cards {
+		padding-left: 17.5%;
+		display: flex;
+		flex-wrap: wrap;
+		
+		.card {
+			margin-right: 30px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__pagination_wrapper {
+		display: flex;
+		justify-content: center;
+		margin-top: 70px;
+	}
+
+	&__pagination_lots {
+		color: #8F8F8F;
+		font-family: $ff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: $fw-black;
+		line-height: 15px;
+
+		span {
+			color: $white;
+			font-weight: $fw-regular;
+		}
+	}
+
+	&__pagination_nums {
+		display: flex;
+		color: $white;
+		font-family: $ff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 15px;
+		text-transform: capitalize; 
+		margin-left: 50px;
+	}
+
+	.pagination__num {
+		margin-right: 30px;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.active {
+			color: $accent;
+		}
+	}
+}
