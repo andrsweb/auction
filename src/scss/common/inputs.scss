@@ -1,0 +1,101 @@
+.input {
+	padding: 7px 7px;
+	border-radius: 5px;
+	width: 100%;
+	color: $white;
+	background-color:  #252E3B;
+	font-family: $ff;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 15px;
+	position: relative;
+	text-align: center;
+	border: 1px solid  #6F6F6F;
+	transition: border ease $tr,
+				box-shadow ease $tr;
+
+	&:focus {
+		border:  1px solid $accent;
+		box-shadow: 0px 0px 5px 0px #3052FF; 
+	}
+
+	&::placeholder {
+		color: $white;
+		background-color:  #252E3B;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: 15px;
+		text-align: center;
+	}
+
+	&__about {
+		color: $white;
+		font-family: $ff;
+		font-size: 10px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		margin-top: 5px;
+	}
+}
+
+.label__wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+
+	label {
+		margin-bottom: 0;
+		margin-right: 5px;
+
+		@media all and (min-width: $sm) {
+			margin-right: 10px;
+		}
+	}
+
+	&.confirmed {
+		.label__text {
+			color: #3F0;
+
+			span {
+				display: none;
+			}
+		}
+
+		svg path {
+			stroke: #3F0;
+		}
+	}
+}
+
+.label__text {
+	color: #6F6F6F;
+	font-family: $ff;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: $fw-regular;
+	line-height: normal;
+
+	span {
+		color: $accent;
+		font-weight: $fw-black;
+		cursor: pointer;
+	}
+}
+
+label {
+	color: $white;
+	font-family: $ff;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 15px;
+	margin-bottom: 5px;
+
+	@media all and (min-width: $sm) {
+		font-size: 12px;
+	}
+}

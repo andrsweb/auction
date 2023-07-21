@@ -10,6 +10,8 @@
 @import 'common/buttons';
 @import 'common/components';
 @import 'common/forPagination';
+@import 'common/input-statements';
+@import 'common/inputs';
 
 // Header styles.
 @import 'header/header';
@@ -39,6 +41,8 @@
 //All lots
 @import 'sections/all-lots/hero';
 
+//Settings
+@import 'sections/general/general';
 
 //Dropdown
 @import 'sections/home/dropdown';

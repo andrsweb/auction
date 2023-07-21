@@ -1,0 +1,186 @@
+.account__settings {
+	padding: 55px 0 100px;
+
+	@media all and (min-width: $lg) {
+		padding: 70px 0 100px;
+	}
+
+
+	h2 {
+		color: $white;
+		font-family: $ff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: $fw-black;
+		line-height: normal;
+		position: relative;
+		margin-bottom: 46px;
+		text-align: left;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+		}
+	}
+
+	.account__general {
+		background: linear-gradient(90deg, rgba(48, 82, 255, 0.00) 0%, rgba(48, 82, 255, 0.20) 100%);
+			border: 1px solid $accent;
+			border-radius: $bord-10;
+
+		&_wrapper {
+			padding: 30px 20px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			
+
+			@media all and (min-width: $lg) {
+				flex-direction: row;
+				padding: 40px 80px;
+			}
+		}
+
+		&_form {
+			width: 100%;
+			max-width: 450px;
+			margin-bottom: 26px;
+		}
+
+		&_photo {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+
+			@media all and (min-width: $lg) {
+				margin-left: 100px;
+			}
+
+			@media all and (min-width: $xxl) {
+				justify-content: flex-start;
+				margin-left: 300px;
+			}
+		}
+
+		.account__photo {
+			&_wrapper {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				@media all and (min-width: $lg) {
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+				}
+			}
+
+			&_buttons {
+				width: 100%;
+				max-width: 150px;
+				margin: 10px auto 0 auto;
+			}
+		}
+	}
+
+	.input__wrapper {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.form-button {
+		display: flex;
+		justify-content: center;
+		margin-top: 40px;
+		width: 100%;
+
+		@media all and (min-width: $xl) {
+			margin-top: 36px;
+		}
+	}
+
+	.delete__avatar, .change__avatar {
+		display: flex;
+		align-items: center;
+		color: $white;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: 15px;
+		cursor: pointer;
+		transition: opacity ease $tr;
+
+		img {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+
+			@media all and (min-width: $lg) {
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	.change__avatar {
+		margin-bottom: 16px;
+	}
+
+	.avatar__wrapper {
+		width: 150px;
+		height: 150px;
+		position: relative;
+		clip-path: polygon(50% 0.4%, 93% 25%, 93% 74.3%, 50% 98.5%, 7.6% 74%, 7.6% 25%);
+
+		@media all and (min-width: $lg) {
+			width: 260px;
+			height: 260px;
+		}
+
+		.hexagon {
+			width: 150px;
+			height: 150px;
+			position: relative;
+			z-index: 1;
+
+			@media all and (min-width: $lg) {
+				width: 260px;
+				height: 260px;
+			}
+		}
+
+		.avatar {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	.blue {
+		max-width: 150px;
+		font-size: 12px;
+		padding: 7px 0;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,27 @@
+.input-state {
+	display: none;
+	font-family: $ff;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: $fw-regular;
+	line-height: normal; 
+	margin-top: 3px;
+}
+
+.input__wrapper.error-state {
+	input {
+		border: 1px solid #FF0000;
+	}
+
+	.input-state {
+		display: block;
+		color: #FF0000;
+		text-align: center;
+	}
+}
+
+.input__wrapper.ok-state {
+	input {
+		border: 1px solid #33FF00;
+	}
+}

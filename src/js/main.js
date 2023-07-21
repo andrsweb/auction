@@ -17,3 +17,6 @@ import './dropdowns'
 
 //Running numbers
 import './runningNum'
+
+//for SVG
+import './forSVG'
