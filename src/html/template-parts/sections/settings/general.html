@@ -1,0 +1,92 @@
+<section class="account__settings">
+	<div class="container">
+		<h2>Общие данные</h2>
+		<div class="account__general">
+			<div class="account__general_wrapper">
+				<form class="account__general_form">
+					<fieldset>
+						<label for="settings-name">
+							Ваше имя на сайте
+						</label>
+						<div class="input__wrapper">
+							<input class="input" id="settings-name" type="text" placeholder="Введите имя" name="settings-name">
+							<div class="input-state"></div>
+							<div class="input__about">
+								Его будет видно только администрации
+							</div>
+						</div>
+						<div class="label__wrapper">
+							<label for="settings-mail">
+								Ваша почта
+							</label>
+							<img src="img/settings/check.svg" width="20" height="20" alt="">
+							<div class="label__text">
+								Не подтверждена, <span>подтвердить сейчас</span>
+							</div>
+						</div>
+						<div class="input__wrapper error-state">
+							<input class="input" id="settings-mail" type="email" placeholder="Введите почту" name="settings-mail">
+							<div class="input-state">
+								Данный e-mail уже используется
+							</div>
+							<div class="input__about">
+								Почта нужна для: авторизации, восстановления пароля, связи с администрацией
+							</div>
+						</div>
+						<div class="label__wrapper">
+							<label for="settings-mail">
+								Ваш телефон
+							</label>
+							<img src="img/settings/check.svg" width="20" height="20" alt="">
+							<div class="label__text">
+								Не подтвержден, <span>подтвердить сейчас</span>
+							</div>
+						</div>
+						<div class="input__wrapper">
+							<input class="input" id="settings-tel" type="tel" placeholder="Введите номер телефона" name="settings-tel">
+							<div class="input-state"></div>
+							<div class="input__about">
+								Номер телефона служит как альтернатива e-mail.
+							</div>
+						</div>
+						<label for="settings-choose">
+							Предпочитаемый способ связи
+						</label>
+						<div class="input__wrapper">
+							<input class="input" id="settings-choose" type="tel" placeholder="Введите предпочитаемый способ связи" name="settings-choose">
+							<div class="input-state"></div>
+							<div class="input__about">
+								Предпочитаемый способ связи служит для связи администрации с пользователями.
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<div class="account__general_photo">
+					<div class="account__photo_wrapper">
+						<div class="account__photo__img">
+							<div class="avatar__wrapper">
+								<img class="hexagon" src="img/card/hex.svg" width="240" height="240" alt="">
+								<img class="avatar" src="img/men.jpg" width="300" height="300" alt="">
+							</div>
+						</div>
+						<div class="account__photo_buttons">
+							<div class="change__avatar">
+								<img src="img/settings/change.svg" width="30" height="30" alt="">
+								Обновить аватар
+							</div>
+							<div class="delete__avatar">
+								<img src="img/settings/cross.svg" width="30" height="30" alt="">
+								Удалить аватар
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-button">
+				<button class="button blue border" type="button">
+					Сохранить
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
