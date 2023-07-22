@@ -44,6 +44,16 @@
 		background-color: rgba(48, 82, 255, 0.50);
 		border: 1px solid $accent;
 	}
+
+	&.session__input {
+		border: 1px solid $accent;
+		cursor: pointer;
+		max-width: 66px;
+
+		@media all and (min-width: $lg) {
+			max-width: 111px;
+		}
+	}
 }
 
 .label__wrapper {

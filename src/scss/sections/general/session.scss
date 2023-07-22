@@ -1,0 +1,153 @@
+.session {
+	padding: 75px 0 100px;
+
+	@media all and (min-width: $lg) {
+		padding: 40px 0 40px;
+	}
+
+	&__lenght {
+		margin-bottom: 32px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__max {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.session__input_wrapper {
+			position: relative;
+			cursor: pointer;
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: 10px;
+				top: 40%;
+				transform: translateY(-50%)
+							rotate(135deg);
+				display: block;
+				width: 10px;
+				height: 10px;
+				border-right: 2px solid $accent;
+				border-top: 2px solid $accent;
+			}
+		}
+	}
+
+	&__text {
+		color: $white;
+		font-family: $ff;
+		font-size: 11px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+		margin-right: 10px;
+
+		@media all and (min-width: $sm) {
+			font-size: 12px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		background: linear-gradient(90deg, rgba(48, 82, 255, 0.00) 0%, rgba(48, 82, 255, 0.20) 100%);
+		border: 1px solid $accent;
+		border-radius: $bord-10;
+		padding: 30px 20px;
+		
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 40px 40px 40px 60px;
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 40px 230px 40px 60px;
+		}
+	}
+
+	.session__info {
+		&_wrapper {
+			display: flex;
+			color: $white;
+			font-family: $ff;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: normal;
+			justify-content: center;//
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		&_history {
+			color: $accent;
+			font-family: $ff;
+			font-size: 10px;
+			font-style: normal;
+			font-weight: $fw-black;
+			line-height: normal;
+			margin: 15px 0 20px;
+			position: relative;
+			width: 110px;
+			cursor: pointer;
+			transition: opacity ease $tr;
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translateY(-50%)
+							rotate(135deg);
+				display: block;
+				width: 4px;
+				height: 4px;
+				border-right: 2px solid $accent;
+				border-top: 2px solid $accent;
+			}
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+
+		.session-active {
+			color: #3F0;
+		}
+	}
+
+	&__close_active {
+		color: #F00;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-black;
+		line-height: normal;
+		text-align: center;
+		cursor: pointer;
+
+		span {
+			cursor: default;
+			color: $white;
+			font-weight: $fw-regular;
+		}
+	}
+
+	.session-system {
+		font-weight: $fw-black;
+	}
+
+	.session-ip {
+		color: #6F6F6F;
+		font-weight: $fw-black;
+	}
+}
