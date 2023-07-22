@@ -22,7 +22,6 @@
 
 	&::placeholder {
 		color: $white;
-		background-color:  #252E3B;
 		font-family: $ff;
 		font-size: 12px;
 		font-style: normal;
@@ -39,6 +38,11 @@
 		font-weight: $fw-regular;
 		line-height: normal;
 		margin-top: 5px;
+	}
+
+	&.input-blue {
+		background-color: rgba(48, 82, 255, 0.50);
+		border: 1px solid $accent;
 	}
 }
 
@@ -86,7 +90,7 @@
 	}
 }
 
-label {
+label, .auth__title {
 	color: $white;
 	font-family: $ff;
 	font-size: 10px;

@@ -1,0 +1,169 @@
+.security {
+	h4 {
+		margin-top: 25px;
+		color: $white;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: 15px;
+		margin-bottom: 5px;
+
+		@media all and (min-width: $sm) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-top: 50px;
+			font-size: 10px;
+		}
+	}
+
+	&__wrapper {
+		background: linear-gradient(90deg, rgba(48, 82, 255, 0.00) 0%, rgba(48, 82, 255, 0.20) 100%);
+		border: 1px solid $accent;
+		border-radius: $bord-10;
+		padding: 20px 20px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			padding: 40px 60px;
+		}
+	}
+
+	label {
+		font-size: 12px;
+
+		@media all and (min-width: $lg) {
+			font-size: 10px;
+		}
+	}
+
+	&__items {
+		max-width: 470px;
+
+		.input__wrapper {
+			display: flex;
+			align-items: center;
+
+			.input {
+				max-width: 350px;
+
+				&::placeholder {
+					opacity: 1;
+				}
+			}
+		}
+
+		.blue {
+			max-width: 94px;
+			font-size: 12px;
+			padding: 7px 0;
+			margin-left: 8px;
+		}
+	}
+
+	.label__wrapper {
+		margin-bottom: 5px;
+		margin-top: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-top: 20px;
+		}
+	}
+
+	.auth__title {
+		width: 70px;
+		margin-bottom: 0;
+		font-size: 12px;
+
+		@media all and (min-width: $lg) {
+			font-size: 10px;
+		}
+	}
+
+	&__resources {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 25px;
+
+		@media all and (min-width: $lg) {
+			margin-left: 270px;
+		}
+
+		h4 {
+			margin-top: 0;
+		}
+
+		.auth__title {
+			width: auto;
+		}
+
+		&_wrapper {
+			width: 300px;
+			height: 195px;
+			position: relative;
+		}
+
+		&_item {
+			cursor: pointer;
+			transition: opacity ease $tr;
+			&:hover {
+				opacity: $op;
+			}
+
+			&:first-child {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			&:nth-child(2) {
+				position: absolute;
+				top: 33px;
+				left: 60px;
+			}
+
+			&:nth-child(3) {
+				position: absolute;
+				top: 63px;
+				left: 114px;
+			}
+
+			&:nth-child(4) {
+				position: absolute;
+				top: 33px;
+				left: 169px;
+			}
+
+			&:nth-child(5) {
+				position: absolute;
+				top: 95px;
+				left: 60px;
+			}
+
+			&:nth-child(6) {
+				position: absolute;
+				top: 95px;
+				left: 169px;
+			}
+
+			&:last-child {
+				position: absolute;
+				top: 126px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
