@@ -241,6 +241,7 @@
 		position: relative;
 
 		.point {
+			display: block;
 			position: absolute;
 			right: -113px;
 			top: 50%;
@@ -310,6 +311,10 @@
 		}
 
 	}
+}
+
+.point {
+	display: none;
 }
 
 .btn-reverse {

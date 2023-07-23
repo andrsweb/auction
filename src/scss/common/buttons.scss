@@ -96,6 +96,16 @@
 			background-color: transparent;
 		}
 	}
+
+	& .selected {
+		.heart {
+			display: none;
+		}
+
+		.heart-fill {
+			display: block;
+		}
+	}
 }
 
 .card__button {
