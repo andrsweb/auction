@@ -5,6 +5,9 @@ import './header'
 import './forAnchors'
 import './highlight'
 
+//For aside
+import './aside'
+
 //For card
 import './sliders'
 import './heart'

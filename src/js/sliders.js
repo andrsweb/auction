@@ -9,7 +9,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	swiperWithCustom('.other-lots', 5, false, false, false)
 	swiperWithCustom('.active-auc', '.active-auc-pagination', '.active-next', '.active-prev')
 	verticalSlider()
+	activeSwiper( '.active-lot-swiper', '.active-lot-pagination')
 })
+
+const activeSwiper = (selector, pag) => {
+	const swiper = new Swiper(selector, {
+		grabCursor: true,
+		loop: true,
+		slidesPerView: 'auto',
+		spaceBetween: 30,
+		modules: [Pagination],
+
+		pagination: {
+			el: pag,
+			clickable: true,
+		}
+	})
+}
 
 const swiperWithPagination = () => {
 	let swipers = document.querySelectorAll('.card-swiper')

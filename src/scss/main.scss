@@ -41,6 +41,12 @@
 //All lots
 @import 'sections/all-lots/hero';
 
+//All lots
+@import 'sections/active-lot/hero';
+@import 'sections/active-lot/active-lot';
+@import 'sections/active-lot/recomend';
+@import 'sections/active-lot/super';
+
 //Settings
 @import 'sections/general/general';
 @import 'sections/general/security';
