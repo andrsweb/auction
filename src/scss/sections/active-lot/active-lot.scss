@@ -1,47 +1,76 @@
 .active-lot {
-	padding: 27px 0;
+	padding: 10px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 27px 0;
+	}
 
 	.container {
-		max-width: 1340px;
+		max-width: 1380px;
+		padding: 0 8px;
+
+		@media all and (min-width: $lg) {
+			padding: 0 30px;
+		}
 	}
 
 	&__wrapper {
-		display: flex;
-		align-items: center;
 		border-radius: 10px;
 		background: linear-gradient(90deg, rgba(48, 82, 255, 0.00) 0%, rgba(48, 82, 255, 0.20) 100%);
 		border: 1px solid $accent;
-		padding: 25px 70px 25px 110px;
+		padding: 20px;
+		position: relative;
+
+		@media all and (min-width: $lg) {
+			padding: 25px 70px 25px 110px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
 	}
 
 	&__info {
 		width: 100%;
 		max-width: 504px;
-		margin-right: 82px;
+
+		@media all and (min-width: $lg) {
+			margin-right: 82px;
+		}
 
 		&_title {
 			color: #FFF;
 			font-family: $ff;
-			font-size: 18px;
+			font-size: 15px;
 			font-style: normal;
 			font-weight: $fw-black;
 			line-height: normal;
 			letter-spacing: 0.9px;
 			text-transform: uppercase;
 			margin-bottom: 20px;
+
+			@media all and (min-width: $lg) {
+				font-size: 18px;
+			}
 		}
 
 		&_deposit {
 			color: #E1E1E1;
 			font-family: $ff;
-			font-size: 15px;
+			font-size: 12px;
 			font-style: normal;
 			font-weight: $fw-regular;
-			line-height: 25px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 10px;
+			line-height: normal; 
+
+			@media all and (min-width: $lg) {
+				font-size: 15px;
+				line-height: 25px;
+			}
 
 			&:last-child {
 				margin-bottom: 0;
@@ -55,48 +84,109 @@
 	}
 
 	&__img {
-		margin-right: 80px;
+		margin-right: 20px;
+
+		@media all and (min-width: $lg) {
+			margin-right: 80px;
+		}
 
 		img {
-			max-width: 230px;
-			max-height: 330px;
-			object-fit: cover;
+			max-width: 100px;
+			max-height: 122px;
+			object-fit: contain;
+
+			@media all and (min-width: $lg) {
+				max-width: 230px;
+				max-height: 330px;
+			}
 		}
 	}
 
 	&__timer {
-		&_wrapper {
+		@media all and (min-width: $lg) {
 			position: relative;
+		}
 
-			.timer-img, .timer {
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%,-50%);
+		.timer-img,
+		.timer {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.timer-img {
+			display: none;
+
+			@media all and (min-width: $lg) {
+				display: block;
 			}
+		}
 
-			.timer {
-				position: absolute;
+		.circle {
+			display: none;
+
+			@media all and (min-width: $lg) {
+				display: block;
+			}
+		}
+
+		.timer {
+			position: absolute;
+			left: 50%;
+			top: 193px;
+			transform: translateX(-50%);
+			color: $white;
+			font-family: $ff;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: $fw-black;
+			line-height: normal;
+
+			@media all and (min-width: $lg) {
 				left: 50%;
 				top: 65%;
 				transform: translateX(-50%);
-				color: $white;
-				font-family: $ff;
-				font-size: 15px;
-				font-style: normal;
-				font-weight: $fw-black;
-				line-height: normal;
 			}
 		}
 	}
 
 	.mobile__timer {
-		display: none;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 40px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			display: none;
+		}
 	}
 
 	.blue {
-		margin-top: 71px;
-		padding: 20px 0;
-		max-width: 100%;
+		padding: 7px 0;
+		max-width: 330px;
+
+		@media all and (min-width: $lg) {
+			margin-top: 71px;
+			padding: 20px 0;
+			max-width: 100%;
+		}
+
+		&.desktop-button {
+			display: none;
+
+			@media all and (min-width: $lg) {
+				display: block;
+			}
+		}
+
+		&.mobile-button {
+			margin: 0 auto;
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+		}
 	}
 }
