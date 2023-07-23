@@ -20,198 +20,40 @@
 		max-width: 1780px;
 	}
 
-	.hexagons {
-		position: absolute;
-		left: 0;
-		top: 0;
-		display: none;
-		width: 0;
-		height: 0;
-		z-index: -1;
-
-		.nav__menu_item {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 70px;
-			height: 70px;
-			z-index: 90;
-			cursor: pointer;
-			transition: opacity ease $tr;
-
-			&:hover {
-				opacity: $op;
-			}
-			
-			&:first-child {
-				position: absolute;
-				top: 25px;
-				left: 133px;
-			}
-
-			&:nth-child(2) {
-				position: absolute;
-				top: 25px;
-				left: 196px;
-			}
-
-			&:nth-child(3) {
-				position: absolute;
-				top: 80px;
-				left: 102px;
-			}
-
-			&:nth-child(4) {
-				position: absolute;
-				top: 80px;
-				left: 164px;
-			}
-
-			&:nth-child(5) {
-				position: absolute;
-				top: 80px;
-				left: 227px;
-			}
-
-			&:nth-child(6) {
-				position: absolute;
-				top: 136px;
-				left: 70px;
-			}
-
-			&:nth-child(7) {
-				position: absolute;
-				top: 136px;
-				left: 133px;
-			}
-
-			&:nth-child(8) {
-				position: absolute;
-				top: 136px;
-				left: 195px;
-			}
-
-			&:last-child {
-				position: absolute;
-				top: 136px;
-				left: 258px;
-			}
-		}
-	}
-
-	.auc__menu {
-		position: fixed;
-		top: 100px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 70;
-		width: 312px;
-
-		@media all and (min-width: $xl) {
-			width: auto;
-			transform: translateX(0);
-			top: 160;
-			left: 80px;
-			display: block;
-		}
-
-		.auc__menu_arrow {
-			display: block;
-			cursor: pointer;
-			transition: opacity ease $tr;
-			margin-left: 17px;
-
-			&:hover {
-				opacity: $op;
-			}
-
-			@media all and (min-width: $xl) {
-				display: none;
-			}
-		}
-
-		.auc__nav {
-			display: none;
-
-			@media all and (min-width: $xl) {
-				display: flex;
-			}
-		}
-
-		.auc__nav_item {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			color: $white;
-			font-family: $ff;
-			font-size: 15px;
-			font-style: normal;
-			font-weight: $fw-black;
-			line-height: 15px;
-			width: 220px;
-			margin-bottom: 25px;
-			cursor: pointer;
-
-			picture {
-				margin-left: auto;
-			}
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-			&.opened {
-				position: relative;
-				z-index: 90;
-
-				.hexagons {
-					display: block;
-					backdrop-filter: blur(2.5px);
-
-				}
-			}
-		}
-
-		.auc__menu_input {
-			display: flex;
-			align-items: center;
-			position: relative;
-			width: 312px;
-			margin: 0 auto 40px auto;
-
-			@media all and (min-width: $xl) {
-				width: 220px;
-			}
-
-			&::after {
-				content: "";
-				display: block;
-				width: 16px;
-				height: 16px;
-				position: absolute;
-				right: 55px;
-				top: 50%;
-				transform: translateY(-50%);
-				background-image: url('../img/active-auc/loup.svg');
-				background-repeat: no-repeat;
-				background-size: contain;
-				cursor: pointer;
-			}
-		}
-	}
-
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		max-width: 380px;
+		margin: 0 auto;
+
+		@media all and (min-width: 576px) {
+			max-width: 576px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 992px;
+		}
 
 		@media all and (min-width: $xl) {
 			padding-left: 15%;
+			max-width: 100%;
 		}
 
 		.card {
-			margin-right: 30px;
 			margin-bottom: 30px;
+
+			@media all and (min-width: 576px) {
+				&:nth-child(2n + 1) {
+					margin-right: 30px;
+				}
+			}
+
+			@media all and (min-width: $xl) {
+				&:nth-child(n + 1) {
+					margin-right: 30px;
+				}
+			}
 		}
 	}
 
@@ -234,29 +76,30 @@
 			font-weight: $fw-regular;
 		}
 	}
+}
 
-	&__pagination_nums {
-		display: flex;
-		color: $white;
-		font-family: $ff;
-		font-size: 18px;
-		font-style: normal;
-		font-weight: $fw-regular;
-		line-height: 15px;
-		text-transform: capitalize;
-		margin-left: 50px;
+.all__pagination_nums {
+	display: flex;
+	color: $white;
+	font-family: $ff;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: $fw-black;
+	line-height: 15px;
+	text-transform: capitalize;
+	margin-left: 30px;
+}
+
+.pagination__num {
+	margin-right: 30px;
+	cursor: pointer;
+
+	&:last-child {
+		margin-right: 0;
 	}
 
-	.pagination__num {
-		margin-right: 30px;
-		cursor: pointer;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		&.active {
-			color: $accent;
-		}
+	&.active {
+		color: $accent;
+		font-weight: $fw-extra;
 	}
 }

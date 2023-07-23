@@ -1,0 +1,56 @@
+.my-lots {
+	padding: 70px 0;
+
+	.container {
+		max-width: 100%;
+
+		@media all and (min-width: $lg) {
+			padding: 0 90px;
+		}
+	}
+
+	.auc__menu {
+		@media all and (min-width: $lg) {
+			display: none;
+		}
+	}
+
+	.settings_title {
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+
+	.my-lots__wrapper {
+		display: flex;
+		margin-top: 30px;
+		overflow-x: auto;
+		padding-bottom: 10px;
+
+		.card {
+			margin-right: 30px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.empty__lots {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		color: $white;
+		font-family: $ff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 15px;
+		letter-spacing: 0.9px;
+		margin: 70px 0 100px;
+
+		a {
+			color: $accent;
+			margin-left: 8px;
+		}
+	}
+}

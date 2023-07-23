@@ -19,6 +19,18 @@ body {
 	line-height: $lh;
 	color: $black;
 	background-color: $black;
+	scrollbar-color: $accent  #252E3B;
+			scrollbar-width: thin;
+
+			&::-webkit-scrollbar {
+				width: 5px;
+				height: 2px;
+				background-color: $accent;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background-color: #143861;
+			}
 }
 
 img {
@@ -57,6 +69,7 @@ input {
 	background-color: $black;
 	background: $main-bg;
 	margin-top: 90px;
+
 
 	.footer {
 		margin-top: auto
