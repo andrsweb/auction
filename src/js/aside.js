@@ -12,7 +12,7 @@ const showAsideMenu = () => {
 	const button = document.querySelector('.auc__menu_arrow')
 	const aside = document.querySelector('.all')
 
-	if (!button && !menu) return
+	if (!button || !menu) return
 
 	button.addEventListener('click', () => {
 		setTargetElement(document.querySelector('#aside-lock'))
