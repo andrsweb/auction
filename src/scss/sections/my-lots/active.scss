@@ -199,3 +199,46 @@
 		display: flex;
 	}
 }
+
+.lot__winner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+
+	@media all and (min-width: $xl) {
+		margin-left: 60px;
+	}
+
+	&_text {
+		color: #FFF;
+		font-family: Mulish;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 15px;
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+.history {
+	padding: 45px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 45px 0 100px;
+	}
+
+	.active-lot {
+		padding: 20px;
+
+		@media all and (min-width: $lg) {
+			padding: 60px 70px 30px 110px;
+		}
+	}
+
+	.blue {
+		margin-right: 0;
+	}
+}
+
