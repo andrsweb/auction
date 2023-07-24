@@ -163,4 +163,10 @@
 	span {
 		font-family: $ff-add;
 	}
+
+	&[disabled] {
+		&:hover {
+			opacity: 1;
+		}
+	}
 }

@@ -64,7 +64,7 @@
 			font-size: 12px;
 			font-style: normal;
 			font-weight: $fw-regular;
-			line-height: 25px;
+			line-height: normal;
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
@@ -78,6 +78,7 @@
 
 			@media all and (min-width: $lg) {
 				font-size: 15px;
+				line-height: 25px;
 			}
 
 			&:last-child {
