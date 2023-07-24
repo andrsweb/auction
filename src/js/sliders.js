@@ -10,7 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	swiperWithCustom('.active-auc', '.active-auc-pagination', '.active-next', '.active-prev')
 	verticalSlider()
 	activeSwiper( '.active-lot-swiper', '.active-lot-pagination')
+	myLotsSwiper()
 })
+
+const myLotsSwiper = () => {
+	const swiper = new Swiper('.my-lots-swiper', {
+		direction: 'horizontal',
+		slidesPerView: 'auto',
+		grabCursor: true,
+		loop: true,
+		spaceBetween: 30,
+	})
+}
 
 const activeSwiper = (selector, pag) => {
 	const swiper = new Swiper(selector, {

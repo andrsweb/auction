@@ -6,7 +6,6 @@
 	}
 
 	.header__logo {
-
 		@media all and (min-width: $lg) {
 			margin-right: 100px;
 		}
@@ -27,6 +26,10 @@
 
 			&:last-child {
 				margin-right: 0;
+			}
+
+			&.active {
+				color: $accent;
 			}
 
 			.lots_value {
