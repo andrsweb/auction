@@ -45,10 +45,6 @@
 			}
 		}
 
-		&_timer {
-			position: relative;
-		}
-
 		.member_img {
 			margin-right: 4px;
 
@@ -190,13 +186,6 @@
 		text-align: center;
 	}
 
-	.hero__item_time {
-		font-weight: $fw-black;
-		color: $white;
-		text-align: center;
-		font-size: 12px;
-	}
-
 	&__winner_text {
 		color: $white;
 		font-family: $ff;
@@ -217,4 +206,15 @@
 		line-height: 15px;
 		margin-top: 15px;
 	}
+}
+
+.hero__item_time {
+	font-weight: $fw-black;
+	color: $white;
+	text-align: center;
+	font-size: 12px;
+}
+
+.auc-hero__members_timer {
+	position: relative;
 }

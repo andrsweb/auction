@@ -1,0 +1,124 @@
+.my-lots {
+	.container-fluid {
+		max-width: 1340px;
+		margin: 0 auto;
+	}
+}
+
+.active-lots__wrapper {
+	width: 100%;
+	border-radius: 10px;
+	background: linear-gradient(90deg, rgba(48, 82, 255, 0.00) 0%, rgba(48, 82, 255, 0.20) 100%);
+	margin-top: 25px;
+	padding: 60px 70px 60px 129px;
+
+	.active-lot {
+		display: flex;
+		align-items: center;
+		padding: 0;
+	}
+
+	.active-lot__img {
+		width: 197px;
+		margin-right: 97px;
+	}
+
+	.image-slide {
+		width: 197px;
+		height: 240px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.active-lot-info {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.members {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+
+	.super__info_text {
+		display: flex;
+		align-items: center;
+	}
+
+	.hexagon__wrapper {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		z-index: 2;
+		clip-path: polygon(50% 0.4%, 93% 25%, 93% 74.3%, 50% 98.5%, 7.6% 74%, 7.6% 25%);
+
+		&:nth-child(2) {
+			width: 45px;
+			height: 45px;
+		}
+
+		&:last-child {
+			width: 40px;
+			height: 40px;
+		}
+
+		.hexagon {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			z-index: 10;
+		}
+
+		.member-avatar {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.blue {
+		margin: 0;
+		margin-right: 30px;
+	}
+
+	.image-pagination {
+		position: relative;
+		margin-top: 12px;
+
+		.swiper-pagination-bullet {
+			width: 6px;
+			height: 6px;
+			background-color: $white;
+			opacity: 1;
+
+			&-active {
+				background-color: $accent;
+			}
+		}
+	}
+
+	.lots__timer {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 220px;
+		position: relative;
+		margin-left: auto;
+	}
+
+	.auc__button {
+		width: 140px;
+		height: 140px;
+		left: 50%;
+		top: 55%;
+		font-size: 15px;
+	}
+}

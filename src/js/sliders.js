@@ -11,7 +11,25 @@ document.addEventListener('DOMContentLoaded', () => {
 	verticalSlider()
 	activeSwiper( '.active-lot-swiper', '.active-lot-pagination')
 	myLotsSwiper()
+	imageSwiper()
 })
+
+const imageSwiper = () => {
+	const swiper = new Swiper('.image-swiper', {
+		direction: 'horizontal',
+		slidesPerView: 'auto',
+		grabCursor: true,
+		loop: true,
+		spaceBetween: 30,
+
+		modules: [Pagination],
+
+			pagination: {
+				el: '.image-pagination',
+				clickable: true,
+			}
+	})
+}
 
 const myLotsSwiper = () => {
 	const swiper = new Swiper('.my-lots-swiper', {

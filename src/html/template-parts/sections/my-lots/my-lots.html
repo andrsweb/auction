@@ -12,70 +12,7 @@
 		</h2>
 	</div>
 	<div class="container">
-		<div class="swiper my-lots-swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide my-lots-slide">
-					@@include( '../../components/card.html',
-					{ 'swiper': 'card-swiper', 'class': 'card-slide', 'src1':
-					'img/information-page/works/note.png',
-					'src2': 'img/information-page/works/note.png', 'src3':
-					'img/information-page/works/note.png',
-					'token-price': '150T', 'info-price': '50 568Р', 'goods': 'MacBook air', 'group': 'Техника',
-					'date': '31.05.2023 21:00', 'num': '4'
-					} )
-				</div>
-				<div class="swiper-slide my-lots-slide">
-					@@include( '../../components/card.html',
-					{ 'swiper': 'card-swiper', 'class': 'card-slide', 'src1':
-					'img/information-page/works/note.png',
-					'src2': 'img/information-page/works/note.png', 'src3':
-					'img/information-page/works/note.png',
-					'token-price': '150T', 'info-price': '50 568Р', 'goods': 'MacBook air', 'group': 'Техника',
-					'date': '31.05.2023 21:00', 'num': '4'
-					} )
-				</div>
-				<div class="swiper-slide my-lots-slide">
-					@@include( '../../components/card.html',
-					{ 'swiper': 'card-swiper', 'class': 'card-slide', 'src1':
-					'img/information-page/works/note.png',
-					'src2': 'img/information-page/works/note.png', 'src3':
-					'img/information-page/works/note.png',
-					'token-price': '150T', 'info-price': '50 568Р', 'goods': 'MacBook air', 'group': 'Техника',
-					'date': '31.05.2023 21:00', 'num': '4'
-					} )
-				</div>
-				<div class="swiper-slide my-lots-slide">
-					@@include( '../../components/card.html',
-					{ 'swiper': 'card-swiper', 'class': 'card-slide', 'src1':
-					'img/information-page/works/note.png',
-					'src2': 'img/information-page/works/note.png', 'src3':
-					'img/information-page/works/note.png',
-					'token-price': '150T', 'info-price': '50 568Р', 'goods': 'MacBook air', 'group': 'Техника',
-					'date': '31.05.2023 21:00', 'num': '4'
-					} )
-				</div>
-				<div class="swiper-slide my-lots-slide">
-					@@include( '../../components/card.html',
-					{ 'swiper': 'card-swiper', 'class': 'card-slide', 'src1':
-					'img/information-page/works/note.png',
-					'src2': 'img/information-page/works/note.png', 'src3':
-					'img/information-page/works/note.png',
-					'token-price': '150T', 'info-price': '50 568Р', 'goods': 'MacBook air', 'group': 'Техника',
-					'date': '31.05.2023 21:00', 'num': '4'
-					} )
-				</div>
-			</div>
-	
-		</div>
-		<div class="all__pagination_wrapper">
-			<div class="all__pagination_lots">
-				Избранных лотов: <span class="all-pagination-value">13</span>
-			</div>
-			<div class="all__pagination_nums">
-				<div class="pagination__num active">1</div>
-				<div class="pagination__num">2</div>
-				<div class="pagination__num">3</div>
-			</div>
-		</div>
+		@@include( './lots-swiper.html')
+		@@include('./pagination.html')
 	</div>
 </section>
