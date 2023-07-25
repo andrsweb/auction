@@ -64,7 +64,7 @@
 			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 10px;
-			line-height: normal; 
+			line-height: normal;
 
 			@media all and (min-width: $lg) {
 				font-size: 15px;
@@ -187,5 +187,37 @@
 				display: none;
 			}
 		}
+	}
+}
+
+.lot__winner {
+	position: relative;
+
+	.bord {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@media all and (min-width: $xl) {
+			bottom: 40px;
+		}
+
+		@media all and (min-width: 1337px) {
+			bottom: 25px;
+		}
+	}
+}
+
+.winner__wrapper {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	clip-path: polygon(50% 0.4%, 93% 25%, 93% 74.3%, 50% 98.5%, 7.6% 74%, 7.6% 25%);
+
+	.avatar {
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 }
