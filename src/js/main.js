@@ -15,6 +15,7 @@ import './cardBtn'
 
 //Show items by click btn
 import './showItems'
+import './modal'
 
 //Dropdowns
 import './dropdowns'
