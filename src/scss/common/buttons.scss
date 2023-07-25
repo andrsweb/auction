@@ -106,6 +106,10 @@
 			display: block;
 		}
 	}
+
+	&.clicked {
+		background-color: rgba(48, 82, 255, 0.50);
+	}
 }
 
 .card__button {
@@ -169,4 +173,9 @@
 			opacity: 1;
 		}
 	}
+
+	&.opacity {
+		background-color: transparent;
+	}
 }
+

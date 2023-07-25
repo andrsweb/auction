@@ -4,9 +4,9 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 document.addEventListener('DOMContentLoaded', () => {
 	'use strict'
 
-	swiperWithPagination('.card-swiper')
+	cardSwiper('.card-swiper')
 	swiperWithUI('.works-swiper', 1, '.works-pagination', '.works-next', '.works-prev')
-	swiperWithCustom('.other-lots', 5, false, false, false)
+	otherLotsSwiper('.other-lots')
 	swiperWithCustom('.active-auc', '.active-auc-pagination', '.active-next', '.active-prev')
 	verticalSlider()
 	activeSwiper( '.active-lot-swiper', '.active-lot-pagination')
@@ -37,7 +37,7 @@ const myLotsSwiper = () => {
 		slidesPerView: 'auto',
 		grabCursor: true,
 		loop: true,
-		spaceBetween: 30,
+		spaceBetween: 30
 	})
 }
 
@@ -56,7 +56,7 @@ const activeSwiper = (selector, pag) => {
 	})
 }
 
-const swiperWithPagination = () => {
+const cardSwiper = () => {
 	let swipers = document.querySelectorAll('.card-swiper')
 
 	swipers.forEach(slider => {
@@ -115,6 +115,14 @@ const swiperWithCustom = (selector, pag, next, prev) => {
 	})
 }
 
+const otherLotsSwiper = (selector) => {
+	const swiper = new Swiper(selector, {
+		grabCursor: true,
+		loop: true,
+		slidesPerView: 'auto',
+		spaceBetween: 30
+	})
+}
 const verticalSlider = () => {
 	const swiper = new Swiper('.testi-swiper', {
 		grabCursor: true,

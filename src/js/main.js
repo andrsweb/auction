@@ -11,6 +11,7 @@ import './aside'
 //For card
 import './sliders'
 import './heart'
+import './cardBtn'
 
 //Show items by click btn
 import './showItems'
