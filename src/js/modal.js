@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const showModal = (selector, modalBtn) => {
 	const modal = document.querySelector(selector)
-	const button = document.querySelector(button)
+	const button = document.querySelector(modalBtn)
 	const closeButton = document.querySelector('.modal__close')
 
 	if (!modal && !button & !closeButton) return

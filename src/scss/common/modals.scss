@@ -9,6 +9,11 @@
 	padding: 20px;
 	box-shadow: 1px 1px 5px 1px rgba(41, 27, 124, 0.493);
 	z-index: 100;
+	display: none;
+
+	&.showed {
+		display: block;
+	}
 
 	h3, &__text {
 		color: $white;
