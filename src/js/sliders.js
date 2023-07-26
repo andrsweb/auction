@@ -98,7 +98,6 @@ const swiperWithCustom = (selector, pag, next, prev) => {
 
 	const swiper = new Swiper(selector, {
 		grabCursor: true,
-		loop: true,
 		slidesPerView: 'auto',
 		spaceBetween: 30,
 		modules: [Pagination, Navigation],
@@ -113,6 +112,17 @@ const swiperWithCustom = (selector, pag, next, prev) => {
 			prevEl: prev
 		}
 	})
+
+	const slideTo = (selector, num) => {
+		const button = document.querySelector(selector)
+		button.addEventListener( 'click', () => {
+			swiper.slideTo(num)
+		})
+	}
+	slideTo( '.gadget', 1)
+	slideTo( '.tech', 2)
+	slideTo( '.value', 3)
+	slideTo( '.cert', 4)
 }
 
 const otherLotsSwiper = (selector) => {

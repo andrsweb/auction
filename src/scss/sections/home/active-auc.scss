@@ -1,5 +1,9 @@
 .active-auctions {
-	padding: 115px 0 160px;
+	padding: 50px 0;
+
+	@media all and (min-width: $lg) {
+		padding: 115px 0 160px;
+	}
 
 	h2 {
 		margin-bottom: 50px;
@@ -140,10 +144,23 @@
 .active-auction-pagination {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
-	max-width: 700px;
-	margin: 54px auto 0 auto;
+	margin: 0 auto;
+	overflow-x: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	padding: 40px 0;
+	max-width: 800px;
+
+	@media all and (min-width: 615px) {
+		justify-content: center;
+	}
+
+	@media all and (min-width: $lg) {
+		padding: 50px 0 0 0;
+		justify-content: space-between;
+	}
 
 	svg path {
 		transition: all ease $tr;
@@ -154,6 +171,11 @@
 		cursor: pointer;
 		width: 50px;
 		height: 50px;
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 
 		&:hover {
 			.hex {
