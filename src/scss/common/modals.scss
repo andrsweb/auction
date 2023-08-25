@@ -138,11 +138,17 @@
 		max-width: 1000px;
 		border-radius: 10px;
 		background: #011229;
-		padding: 50px 47px 50px 35px;
+		padding: 20px;
 		margin: auto 0;
 
 		&_inner {
 			display: flex;
+			flex-direction: column;
+
+			@media all and (min-width: 1040px) {
+				flex-direction: row;
+				padding: 50px 47px 50px 35px;
+			}
 		}
 
 		.last-wrapper {
@@ -167,31 +173,45 @@
 
 		&_left {
 			position: relative;
-			width: 50%;
-			padding: 25px 0 0 0;
+			width: 100%;
+			padding: 10px;
 
-			&::after {
-				content: "";
-				position: absolute;
-				right: 0;
-				top: 50%;
-				transform: translateY(-50%);
-				width: 1px;
-				height: 500px;
-				background-color: $accent;
+			@media all and (min-width: 1040px) {
+				width: 50%;
+				padding: 25px 0 0 0;
+
+				&::after {
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 500px;
+					background-color: $accent;
+				}
 			}
 		}
 
 		&_right {
-			width: 50%;
+			width: 100%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			padding: 25px 0 20px 52px;
+			padding: 10px;
+
+			@media all and (min-width: 1040px) {
+				width: 50%;
+				padding: 25px 0 20px 52px;
+			}
 		}
 
 		.modal-right_logo {
-			margin-bottom: 47px;
+			margin-bottom: 10px;
+
+			@media all and (min-width: 1040px) {
+				margin-bottom: 47px;
+			}
 		}
 
 		.modal-reg_main, .enter-form {
@@ -232,16 +252,24 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin: 10px 0 30px 0;
+			margin: 10px 0 10px 0;
+
+			@media all and (min-width: 1040px) {
+				margin: 10px 0 30px 0;
+			}
 
 			&_link {
 				color: $white;
 				font-family: $ff;
-				font-size: 12px;
+				font-size: 10px;
 				font-style: normal;
 				font-weight: $fw-regular;
 				line-height: 15px;
 				position: relative;
+
+				@media all and (min-width: $lg) {
+					font-size: 12px;
+				}
 
 				span {
 					color: $accent;
@@ -251,11 +279,18 @@
 				.hidden__tip {
 					display: none;
 					position: absolute;
-					bottom: 20px;
+					bottom: 35px;
 					left: 0;
 					background-color: $black;
 					padding: 30px 7px;
-					width: 350px;
+					width: 250px;
+					z-index: 10;
+					border-radius: 5px;
+
+					@media all and (min-width: $md) {
+						width: 350px;
+						bottom: 20px;
+					}
 
 					&_title {
 						color: $white;
@@ -319,18 +354,27 @@
 
 		.card__img {
 			position: relative;
-			width: 430px;
-			height: 253px;
+			width: 170px;
+			height: 130px;
+			margin-top: 20px;
+
+			@media all and (min-width: $lg) {
+				width: 430px;
+				height: 253px;
+				margin-top: 0;
+			}
 		}
 
 		&_img {
-			position: absolute;
-			left: 30%;
-			transform: translateX(-50%);
-			top: -20px;
-			width: 430px;
-			height: 253px;
-			object-fit: contain;
+			@media all and (min-width: $lg) {
+				position: absolute;
+				left: 30%;
+				transform: translateX(-50%);
+				top: -20px;
+				width: 430px;
+				height: 253px;
+				object-fit: contain;
+			}
 		}
 
 		&-swiper {
@@ -340,11 +384,21 @@
 		&_links {
 			color: $white;
 			font-family: $ff;
-			font-size: 15px;
+			font-size: 12px;
 			font-style: normal;
 			font-weight: $fw-black;
 			line-height: 15px;
-			margin-bottom: 35px;
+			margin-bottom: 10px;
+			text-align: center;
+
+			@media all and (min-width: $lg) {
+				font-size: 15px;
+				margin-bottom: 35px;
+			}
+
+			@media all and (min-width: 1040px) {
+				text-align: left;
+			}
 		}
 
 		&_link {
@@ -370,38 +424,58 @@
 		&_text {
 			color: $white;
 			font-family: $ff;
-			font-size: 12px;
+			font-size: 10px;
 			font-style: normal;
 			font-weight: $fw-regular;
 			line-height: 15px;
 			text-align: center;
-			margin-bottom: 20px;
-			margin-top: 30px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+
+			@media all and (min-width: $xxl) {
+				font-size: 11px;
+				margin-bottom: 20px;
+				margin-top: 30px;
+			}
 		}
 
 		&_link {
 			padding: 5px;
-			width: 82px;
+			width: 45%;
 			height: 25px;
 			background-color: $accent;
-			margin-right: 30px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			margin-right: 10px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			border-radius: 5px;
 			transition: opacity ease $tr;
 
-			&:nth-child(3) {
-				margin-right: 0;
-			}
-
-			&:last-child {
-				margin-right: 0;
-			}
-
 			&:hover {
 				opacity: $op;
+			}
+
+			&:nth-child(2n + 2) {
+				margin-right: 0;
+			}
+
+			@media all and (min-width: 1040px) {
+				margin-right: 30px;
+				margin-bottom: 20px;
+				width: 82px;
+
+				&:nth-child(2n + 2) {
+					margin-right: 30px;
+				}
+
+				&:nth-child(3) {
+					margin-right: 0;
+				}
+	
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 		}
 	}
@@ -455,16 +529,22 @@
 		font-weight: $fw-regular;
 		color: $white;
 		border: 0;
-		padding: 4.5px 15px;
+		padding: 4.5px 10px;
 		position: absolute;
 		right: 0;
 		top: 50%;
+		font-size: 12px;
 		transform: translateY(-50%);
 		background-color: transparent;
 		border: 2px solid $accent;
 		cursor: pointer;
 		transition: background-color ease $tr;
 		border-radius: 5px;
+
+		@media all and (min-width: $md) {
+			padding: 4.5px 15px;
+			font-size: 16px;
+		}
 
 		&:hover {
 			background-color: $accent;
@@ -490,8 +570,13 @@
 }
 
 .modal-reg-card {
-	width: 322px;
-	height: 498px;
+	width: 202px;
+	height: 363px;
+
+	@media all and (min-width: $lg) {
+		width: 322px;
+		height: 498px;
+	}
 
 	.point {
 		display: none;
