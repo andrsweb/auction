@@ -27,12 +27,23 @@
 				</a>
 				<form class="modal-reg_main">
 					<fieldset>
-						<div class="input__wrapper">
-							<input class="input" type="email" placeholder="Ваш E-mail" name="main-reg-email">
-							<div class="input-state"></div>
+						<div class="email-registration_wrapper">
+							<div class="input__wrapper">
+								<input class="input" type="email" placeholder="Ваш E-mail" name="main-reg-email">
+								<div class="input-state"></div>
+							</div>
+							<div class="phone-registration">
+								Регистрация по <span class="phone-reg phone-button">номеру телефона</span>
+							</div>
 						</div>
-						<div class="phone-registration">
-							Регистрация по <span class="phone-reg">номеру телефона</span>
+						<div class="phone-registration_wrapper">
+							<div class="input__wrapper">
+								<input class="input" type="tel" placeholder="Ваш номер телефона" name="main-reg-phone">
+								<div class="input-state"></div>
+							</div>
+							<div class="phone-registration">
+								Регистрация по <span class="phone-reg email-button">E-mail</span>
+							</div>
 						</div>
 						<div class="input__wrapper">
 							<input class="input password-input" type="password" placeholder="Введите пароль"
@@ -89,7 +100,54 @@
 						<div class="checkbox__wrapper">
 							<input type="checkbox" />
 							<div class="checkbox__wrapper_link">
-								С <a href="#">правилами</a> BOFF AUCTION ознакомился
+								С <span class="show-tip"> правилами</span> BOFF AUCTION ознакомился
+								<div class="hidden__tip">
+									<div class="hidden__tip_title">
+										Правила аукциона
+									</div>
+									<div class="hidden__tip_heading">
+										1. До начала
+									</div>
+									<ul class="hidden__tip_list">
+										<li class="hidden__tip_item">
+											a. Каждый участник должен заплатить фиксированное
+											количество токенов для участия в торгах за лот.
+										</li>
+										<li class="hidden__tip_item">
+											b. Пользователь может отменить участие в аукционе и вернуть
+											токены до момента начала торгов. Цена за вход определяется
+											при создании лота.
+										</li>
+										<li class="hidden__tip_item">
+											c. Если до начала торгов не соберется определенное количество
+											участников, то торги автоматически отменяются.
+										</li>
+									</ul>
+									<div class="hidden__tip_heading">
+										2.Процесс торгов
+									</div>
+									<ul class="hidden__tip_list">
+										<li class="hidden__tip_item">
+											a. Процесс торгов начинается с ожидания первого повышения
+											цены от участников. Цена лота начинается с цены в 0 токенов.
+										</li>
+										<li class="hidden__tip_item">
+											b. Повышение цены фиксированное и устанавливается при
+											создании лота. Участник не может перебить текущую цену,
+											если новая цена больше его текущего баланса.
+										</li>
+										<li class="hidden__tip_item">
+											c. После каждого повышения цены. Есть фиксированное
+											количество времени (например 3 мин) для дальнейшего
+											повышения цены другими участниками.
+										</li>
+										<li class="hidden__tip_item">
+											d. Если никто не перебил цену за указанное время, то
+											победителем торгов объявляется последний поднявший цену
+											участник.
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</fieldset>
@@ -99,9 +157,90 @@
 						</button>
 					</div>
 				</form>
+				<form class="enter-form">
+					<fieldset>
+						<div class="input__wrapper">
+							<input class="input" type="text" placeholder="E-mail или номер телефона"
+								name="enter-name-mail">
+							<div class="input-state"></div>
+						</div>
+						<div class="input__wrapper">
+							<input class="input password-input" type="password" placeholder="Пароль" name="enter-pass">
+							<div class="eye__wrapper">
+								<svg class="eye" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+									xmlns:svg="http://www.w3.org/2000/svg">
+									<g class="layer">
+										<title>Layer 1</title>
+										<path
+											d="m5.26,3.94l-0.87,0.86c-0.89,0.89 -1.33,1.34 -1.33,1.89c0,0.55 0.44,1 1.33,1.89l1.42,1.41c1.82,1.82 4.77,1.82 6.6,0l0.27,-0.27l-1.95,-1.52c-0.39,0.4 -0.95,0.66 -1.56,0.66c-1.19,0 -2.16,-0.97 -2.16,-2.17c0,-0.42 0.12,-0.81 0.32,-1.14l-2.07,-1.61z"
+											fill="white" id="svg_1" opacity="0.1" transform="matrix(1, 0, 0, 1, 0, 0)">
+										</path>
+										<path
+											d="m6,3.75c1.72,-0.78 3.82,-0.46 5.23,0.95l2,2c0.34,0.33 0.5,0.5 0.59,0.67c0.21,0.4 0.21,0.86 0,1.26c-0.09,0.17 -0.25,0.34 -0.59,0.67l-0.03,0.03"
+											fill="#000000" fill-opacity="0" id="svg_4" stroke="#92979D"
+											stroke-linecap="round" stroke-linejoin="round"
+											transform="matrix(1, 0, 0, 1, 0, 0)"></path>
+										<path
+											d="m4.68,5.6c0.26,-0.26 0.26,-0.68 0,-0.94c-0.26,-0.26 -0.69,-0.26 -0.95,0l0.95,0.94zm0.42,5.23l-1.41,-1.42l-0.94,0.95l1.41,1.41l0.94,-0.94zm5.66,0c-1.56,1.56 -4.09,1.56 -5.66,0l-0.94,0.94c2.08,2.08 5.46,2.08 7.54,0l-0.94,-0.94zm-7.07,-4.24l0.99,-0.99l-0.95,-0.94l-0.98,0.98l0.94,0.95zm7.47,3.84l-0.4,0.4l0.94,0.94l0.41,-0.4l-0.95,-0.94zm-7.47,-1.02c-0.46,-0.45 -0.75,-0.75 -0.94,-1c-0.18,-0.23 -0.2,-0.34 -0.2,-0.41l-1.33,0c0,0.48 0.2,0.87 0.47,1.22c0.25,0.34 0.63,0.71 1.06,1.14l0.94,-0.95zm-0.94,-3.77c-0.43,0.43 -0.81,0.8 -1.06,1.14c-0.27,0.35 -0.47,0.74 -0.47,1.22l1.33,0c0,-0.07 0.02,-0.18 0.2,-0.41c0.19,-0.25 0.48,-0.55 0.94,-1l-0.94,-0.95z"
+											fill="#92979D" id="svg_5"></path>
+										<circle cx="7.91" cy="8" fill="#92979D" id="svg_7" r="2.86" stroke="null"
+											stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+											stroke-opacity="null"></circle>
+										<circle cx="7.91" cy="8.03" fill="#000000" id="svg_9" r="1.43" stroke="null"
+											stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"
+											stroke-opacity="null"></circle>
+									</g>
+								</svg>
+								<svg class="eye-off" width="16" height="16" viewBox="0 0 16 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.1"
+										d="M4.19685 5.25085L3.33333 6.11437C2.44445 7.00329 2 7.44769 2 7.99996C2 8.55229 2.44445 8.99669 3.33333 9.88563L4.74755 11.2998C6.56999 13.1223 9.52473 13.1223 11.3472 11.2998L11.6215 11.0256L9.6702 9.50789C9.2764 9.91416 8.72487 10.1667 8.1144 10.1667C6.91773 10.1667 5.94771 9.19663 5.94771 8.00003C5.94771 7.58303 6.06551 7.19356 6.26965 6.86303L4.19685 5.25085Z"
+										fill="white"></path>
+									<path d="M2.11719 3.41992L14.1172 12.7533" stroke="#92979D" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M9.57687 9.23039C9.2108 9.69886 8.6406 9.99999 8 9.99999C6.8954 9.99999 6 9.10459 6 7.99999C6 7.55039 6.14835 7.13546 6.39878 6.80139"
+										stroke="#92979D" stroke-width="2"></path>
+									<path
+										d="M6 3.75115C7.7202 2.96885 9.81787 3.28521 11.2329 4.70021L13.2341 6.70137C13.5651 7.03244 13.7306 7.19797 13.8241 7.37371C14.0325 7.76531 14.0325 8.23477 13.8241 8.62637C13.7306 8.80211 13.5651 8.96764 13.2341 9.29871L13.1993 9.33337"
+										stroke="#92979D" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M4.6771 5.59889C4.93746 5.33853 4.93746 4.91643 4.6771 4.65608C4.41676 4.39573 3.99465 4.39573 3.7343 4.65608L4.6771 5.59889ZM5.10436 10.8285L3.69015 9.41424L2.74734 10.3571L4.16156 11.7713L5.10436 10.8285ZM10.7612 10.8285C9.19913 12.3906 6.66646 12.3906 5.10436 10.8285L4.16156 11.7713C6.24436 13.8541 9.62126 13.8541 11.704 11.7713L10.7612 10.8285ZM3.69015 6.58584L4.6771 5.59889L3.7343 4.65608L2.74734 5.64303L3.69015 6.58584ZM11.1641 10.4256L10.7612 10.8285L11.704 11.7713L12.1069 11.3684L11.1641 10.4256ZM3.69015 9.41424C3.23238 8.95651 2.93748 8.65957 2.74876 8.41224C2.57178 8.18031 2.55208 8.07184 2.55208 8.00004H1.21875C1.21875 8.48057 1.42126 8.87044 1.68874 9.22104C1.94446 9.55617 2.31622 9.92597 2.74734 10.3571L3.69015 9.41424ZM2.74734 5.64303C2.31622 6.07415 1.94446 6.44391 1.68874 6.77911C1.42126 7.12964 1.21875 7.51951 1.21875 8.00004H2.55208C2.55208 7.92831 2.57178 7.81984 2.74876 7.58784C2.93748 7.34051 3.23238 7.04364 3.69015 6.58584L2.74734 5.64303Z"
+										fill="#92979D"></path>
+								</svg>
+							</div>
+							<div class="input-state"></div>
+						</div>
+						<div class="input__wrapper code-wrapper">
+							<input class="input" type="text" placeholder="Код из E-mail" name="code-mail">
+							<div class="input-state"></div>
+							<button class="take-code" type="button">
+								Получить код
+							</button>
+						</div>
+						<div class="input__wrapper code-wrapper last-wrapper">
+							<input class="input" type="text" placeholder="Код из SMS" name="code-sms">
+							<div class="input-state"></div>
+							<button class="take-code" type="button">
+								Получить код
+							</button>
+						</div>
+						<div class="password-recovery">
+							Восстановление пароля
+						</div>
+					</fieldset>
+					<div class="modal-reg_button">
+						<button class="button blue border">
+							Войти
+						</button>
+					</div>
+				</form>
 				<div class="other__services">
-					<p class="other__services_text">
+					<p class="other__services_text services_text-reg">
 						Или Вы можете зарегистрироваться при помощи сторонних сервисов
+					</p>
+					<p class="other__services_text services_text-enter">
+						Или Вы можете войти при помощи сторонних сервисов
 					</p>
 					<div class="other__services_links">
 						<a href="#" class="other__services_link" target="_blank">
@@ -124,8 +263,11 @@
 						</a>
 					</div>
 				</div>
-				<div class="already__reg">
+				<div class="already__reg enter-text">
 					Уже зарегистрированы? Перейти ко <span class="enter">входу</span>
+				</div>
+				<div class="already__reg reg-text">
+					Всё ещё нет аккаунта? Перейти к <span class="registration">регистрации</span>
 				</div>
 			</div>
 		</div>

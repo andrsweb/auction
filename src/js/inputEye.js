@@ -5,18 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const showAndHidePassword = () => {
-	const eyeWrapper = document.querySelector('.eye__wrapper')
-	const input = document.querySelector('.password-input')
+	const eyeWrappers = document.querySelectorAll('.eye__wrapper')
+	const inputs = document.querySelectorAll('.password-input')
 
-	if (!eyeWrapper && !input) return
+	if (!eyeWrappers.length && !input) return
 
-	eyeWrapper.addEventListener('click', () => {
-		if (!eyeWrapper.classList.contains('showed')) {
-			eyeWrapper.classList.add('showed')
-			input.type = 'text'
-		} else {
-			eyeWrapper.classList.remove('showed')
-			input.type = 'password'
-		}
+	eyeWrappers.forEach(eyeWrapper => {
+		eyeWrapper.addEventListener('click', () => {
+			if (!eyeWrapper.classList.contains('showed')) {
+				eyeWrapper.classList.add('showed')
+				inputs.forEach(input => {
+					input.type = 'text'
+				})
+				
+			} else {
+				eyeWrapper.classList.remove('showed')
+				inputs.forEach(input => {
+					input.type = 'password'
+				})
+			}
+		})
 	})
 }

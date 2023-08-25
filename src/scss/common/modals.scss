@@ -127,6 +127,7 @@
 	display: none;
 	justify-content: center;
 	align-items: center;
+	overflow-y: auto;
 
 	&.showed {
 		display: flex;
@@ -138,6 +139,7 @@
 		border-radius: 10px;
 		background: #011229;
 		padding: 50px 47px 50px 35px;
+		margin: auto 0;
 
 		&_inner {
 			display: flex;
@@ -192,9 +194,21 @@
 			margin-bottom: 47px;
 		}
 
-		.modal-reg_main {
+		.modal-reg_main, .enter-form {
 			width: 100%;
 			max-width: 350px;
+		}
+
+		.enter-form {
+			display: none;
+
+			.input__wrapper {
+				margin-bottom: 20px;
+
+				&.last-wrapper {
+					margin-bottom: 0;
+				}
+			}
 		}
 
 		.phone-registration {
@@ -227,9 +241,44 @@
 				font-style: normal;
 				font-weight: $fw-regular;
 				line-height: 15px;
+				position: relative;
 
-				a {
+				span {
 					color: $accent;
+					cursor: pointer;
+				}
+
+				.hidden__tip {
+					display: none;
+					position: absolute;
+					bottom: 20px;
+					left: 0;
+					background-color: $black;
+					padding: 30px 7px;
+					width: 350px;
+
+					&_title {
+						color: $white;
+						font-family: $ff;
+						font-size: 10px;
+						font-style: normal;
+						font-weight: $fw-bold;
+						line-height: 12px;
+					}
+
+					&.showed {
+						display: block;
+					}
+
+					&_item {
+						color: $white;
+						font-family: $ff;
+						font-size: 10px;
+						font-style: normal;
+						font-weight: $fw-regular;
+						line-height: 12px;
+						padding-left: 10px;
+					}
 				}
 			}
 
@@ -371,6 +420,71 @@
 			color: $accent;
 			cursor: pointer;
 			margin-left: 3px;
+		}
+
+		&.reg-text {
+			display: none;
+		}
+	}
+
+	.phone-registration_wrapper {
+		display: none;
+	}
+
+	.email-registration_wrapper {
+		display: block;
+	}
+
+	.services_text-enter {
+		display: none;
+	}
+
+	.code-wrapper {
+		input {
+			text-align: left;
+			padding-left: 20px;
+
+			&::placeholder {
+				text-align: left;
+			}
+		}
+	}
+
+	.take-code {
+		font-family: $ff;
+		font-weight: $fw-regular;
+		color: $white;
+		border: 0;
+		padding: 4.5px 15px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: transparent;
+		border: 2px solid $accent;
+		cursor: pointer;
+		transition: background-color ease $tr;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: $accent;
+		}
+	}
+
+	.password-recovery {
+		cursor: pointer;
+		color: $accent;
+		font-family: $ff;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: normal;
+		transition: opacity ease $tr;
+		text-align: center;
+		margin: 5px 0 19px;
+
+		&:hover {
+			opacity: $op;
 		}
 	}
 }
