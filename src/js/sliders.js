@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	swiperWithCustom('.active-auc', '.active-auc-pagination', '.active-next', '.active-prev')
 	verticalSlider()
 	activeSwiper( '.active-lot-swiper', '.active-lot-pagination')
+	activeSwiper( '.modal-reg-swiper', '.modal-reg-pagination')
 	myLotsSwiper()
 	imageSwiper()
 })
